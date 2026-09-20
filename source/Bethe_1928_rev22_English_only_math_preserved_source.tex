@@ -1,0 +1,80 @@
+% Bethe 1928 English translation, rev22
+% English-sentence corrections only; mathematical content preserved.
+%
+% Design principle:
+%   - Bethe_1928_Final_Audited_Translation_rev20.pdf is the immutable base.
+%   - Only the 11 pages on which English prose was corrected are substituted.
+%   - Inline mathematics, displayed mathematics, Miller indices, tables, figures,
+%     pagination, and page geometry are therefore inherited exactly from the
+%     audited PDF rather than re-typeset in LaTeX.
+%
+% Required files in the same directory:
+%   Bethe_1928_Final_Audited_Translation_rev20.pdf
+%   Bethe_1928_rev22_changed_pages.pdf
+%
+% The 11 pages in Bethe_1928_rev22_changed_pages.pdf correspond, in order, to
+% PDF pages: 4, 7, 13, 14, 16, 18, 36, 48, 49, 50, 76.
+%
+% Compile with:
+%   pdflatex Bethe_1928_rev22_English_only_math_preserved_source.tex
+%
+\documentclass{article}
+\usepackage[paperwidth=8.5in,paperheight=11in,margin=0in]{geometry}
+\usepackage{pdfpages}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Pages 1--3: unchanged from rev20.
+\includepdf[pages=1-3,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 4: English prose corrected; original inline math restored/preserved.
+\includepdf[pages=1,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 5--6 unchanged.
+\includepdf[pages=5-6,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 7 corrected.
+\includepdf[pages=2,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 8--12 unchanged.
+\includepdf[pages=8-12,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Pages 13--14 corrected.
+\includepdf[pages=3-4,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Page 15 unchanged.
+\includepdf[pages=15,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 16 corrected; original Fraktur inline symbol restored/preserved.
+\includepdf[pages=5,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Page 17 unchanged.
+\includepdf[pages=17,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 18 corrected.
+\includepdf[pages=6,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 19--35 unchanged.
+\includepdf[pages=19-35,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 36 corrected.
+\includepdf[pages=7,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 37--47 unchanged.
+\includepdf[pages=37-47,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Pages 48--50 corrected.
+\includepdf[pages=8-10,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 51--75 unchanged.
+\includepdf[pages=51-75,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+% Page 76 corrected (Summary stitching/English continuity).
+\includepdf[pages=11,fitpaper=true]{Bethe_1928_rev22_changed_pages.pdf}
+
+% Pages 77--91 unchanged: audit appendix, German figures/tables, terminology.
+\includepdf[pages=77-91,fitpaper=true]{Bethe_1928_Final_Audited_Translation_rev20.pdf}
+
+\end{document}
