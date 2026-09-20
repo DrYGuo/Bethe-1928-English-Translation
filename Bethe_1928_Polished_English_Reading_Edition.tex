@@ -1,0 +1,743 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,top=0.65in,bottom=0.68in,left=0.76in,right=0.76in]{geometry}
+\usepackage{fontspec}
+\setmainfont{STIX}
+\usepackage{unicode-math}
+\setmathfont{STIX Math}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\definecolor{notegray}{gray}{0.38}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue!45!black,pdftitle={Theory of the Diffraction of Electrons by Crystals - Polished English Reading Edition},pdfauthor={Hans Bethe; translation by Yueming Guo; English prose review by GPT-5.6 Sol}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{H. Bethe (1928) - Polished English Reading Text}\fancyhead[R]{\thepage}\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{1.25em}\setlength{\parskip}{0.20em}\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\newcommand{\origpage}[1]{\par\medskip\noindent\hfill{\small\color{notegray}Original journal p.~#1}\hfill\mbox{}\par\smallskip}
+\newcommand{\mathref}[2]{\par\smallskip\noindent\colorbox{gray!8}{\parbox{0.95\linewidth}{\small\color{notegray}\textbf{Audited mathematical material (L#1).} Exact displayed mathematics / numerical table for original journal p.~#2 is preserved in the companion audited translation (rev20); it is not re-created from OCR here.}}\par\smallskip}
+\begin{document}
+\begin{titlepage}\centering
+\vspace*{0.78in}
+{\Huge\bfseries Theory of the Diffraction of Electrons by Crystals\par}\vspace{0.20in}
+{\Large H. Bethe\par}\vspace{0.10in}
+{\large \textit{Theorie der Beugung von Elektronen an Kristallen}\par}
+{\large \textit{Annalen der Physik} 392 (17), 55--129 (1928)\par}\vspace{0.52in}
+{\LARGE\bfseries Polished English Reading Edition\par}\vspace{0.16in}
+{\large English prose re-reviewed sentence by sentence\par}\vfill
+\begin{minipage}{0.84\textwidth}\small\justifying
+This edition is based on the September 2026 audited English translation by Yueming Guo. The previous fidelity audit deliberately allowed awkward literal English when the German meaning was correct. For the present edition, all 665 sentence-aligned audit units were revisited with a second criterion: the English must also read as coherent scientific prose. Germanic calques, page-break artifacts, duplicated wording, and logically opaque constructions were revised while the German facsimile and the existing fidelity audit were used as controls against changes of meaning.
+
+The mathematics is treated separately. A companion audited translation (rev20), supplied as a separate PDF, preserves equations (1)--(94), numerical tables, figures, footnotes, and documented source-print anomalies. This separation prevents the prose-editing pass from introducing new sign, subscript, Fraktur, or equation-number errors. This volume is the polished reading text; the companion audited translation remains the mathematical and documentary authority whenever an exact formula is required.
+\end{minipage}\vfill
+{\small September 2026\par}
+\end{titlepage}
+\section*{Editorial principles}
+\begin{enumerate}[leftmargin=1.7em,itemsep=0.25em]
+\item Meaning, argument order, historical claims, and Bethe's technical distinctions are preserved. No modern physical conclusion is substituted for the 1928 text.
+\item The nine fidelity issues identified by the previous audit are incorporated, including the (46a)/(43) cross-reference and the p.~63 page-break/footnote repairs.
+\item Literal German syntax is not retained merely because it is semantically faithful. Sentences are recast where required for idiomatic, logically transparent scientific English.
+\item Displayed equations are not reconstructed from extracted text. Exact audited mathematics is retained in the companion audited translation (rev20).
+\end{enumerate}
+\section*{Polished English reading text}
+\origpage{55}
+\section*{§ 1. The Refractive Index for de Broglie Waves}
+In recent years, the wave nature of the electron has been demonstrated directly in a number of elegant experiments.\par
+All of these experiments concern the diffraction of electrons by crystals, either by single crystals [Davisson and Germer 1)] or by microcrystalline metals [Thomson 2), Rupp 3)].\par
+Here we shall focus chiefly on the theoretical interpretation of the former experiments, but the results are also partly applicable to diffraction by irregularly ordered microcrystals.\par
+In the experiments of Davisson and Germer an electron beam of uniform velocity v is incident normally on the (111) face (octahedral face) of a nickel single crystal, and the electrons reflected back toward the incident side are observed.\par
+The reflection is found to occur selectively, just as with X-rays: For a given de Broglie wavelength Λ = h/mv (in other words, given velocity v) of the incident beam, in general there is only continuous scattering in all directions, and only for certain discrete incident wavelengths are the electrons preferentially diffracted into a particular direction 4) or into several symmetrically situated directions.\par
+\noindent\footnotesize 1) C. J. Davisson and Germer, Nature 119. p. 558. 1927; Phys. Review 30. p. 705. 1927; Proc. Nat. Ac. Amer. 14. p. 317. 1928. (D. and G. I, II, III.)\par\normalsize
+\noindent\footnotesize 2) G. P. Thomson, Proc. Roy. Soc., A., 117. p. 600. 1928.\par\normalsize
+\noindent\footnotesize 3) E. Rupp, Ann. d. Phys. 85. p. 981. 1928.\par\normalsize
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 55).\par
+\origpage{56}
+From this phenomenon of selective reflection one may conclude that the electron waves are diffracted by the space lattice of the nickel crystal.\par
+Qualitatively, then, the analogy between electron and X-ray reflection is complete; quantitatively, however, the analogy is only partial: The relation between the direction of the diffracted beams and the de Broglie wavelength in vacuum, Λ = h/mv, remains unchanged nΛ = d sinΘ, (1) where n is the order of the reflection, d the distance between two adjacent rows of atoms running in the crystal surface perpendicular to the plane of reflection.\par
+\noindent\footnotesize 1) Relation (1) follows immediately from the lattice structure of the crystal surface, which indeed forms a simple surface grating, using the ordinary wave-kinematical reasoning employed in deriving the diffraction patterns of a line or surface grating; it is entirely independent of the diffraction phenomena in the interior of the crystal.\par\normalsize
+The latter matter only for explaining selective reflection, i.e. the determination of the magnitude of the wavelengths that can be selectively reflected.\par
+As is well known, however, there is a discrepancy between the wavelengths Λ computed from the measured velocity v of the incident electrons by the de Broglie equation, and the wavelengths capable of selective reflection λ to be expected from Laue's theory of space-lattice diffraction; each observed wavelength Λ lies between two wavelengths to be expected from lattice theory, the longest observed wavelength being shorter than the longest to be expected in each individual azimuth. Fig.\par
+\noindent\textbf{Fig. 1 represents these relations schematically.}\par
+\noindent\footnotesize 1) Ni is known to have a cubic face-centered lattice (side of the elementary cube 3.52 Å), and the atoms are therefore arranged in the form of equilateral triangles in an octahedral [(111)] face. For reflection in the (100) and (111) azimuths the sides of the triangles, for that in the (110) azimuth the altitudes, act as "grating lines."\par\normalsize
+\origpage{57}
+For the observed discrepancy two explanations are possible from the outset: a change in the crystal dimensions or a change in the wavelength of the incident electrons.\par
+Davisson and Germer at first invoked the first explanation on purely phenomenological grounds 1) and computed from their experiments that the spacings of the lattice planes parallel to the surface near the crystal surface would have to be contracted to 70–95 percent of their normal value in the interior of the crystal in order to account for the deviation in the wavelengths capable of selective reflection.\par
+Such a contraction of the crystal cannot, of course, be regarded as physically real, since the required contraction varies extremely strongly—and irregularly—with electron velocity. Davisson and Germer probably intended the contraction factor from the outset only as a phenomenological description of their observations.\par
+The other possible assumption is that the wavelength of the de Broglie wave, which outside the crystal is Λ, has a different value, λ, inside it, i.e. that the crystal must be assigned a refractive index μ = Λ/λ (2) for de Broglie waves.\par
+Such a refractive index was first introduced on purely phenomenological grounds by Eckart 2).\par
+The author 3) independently showed that a refractive index follows directly from wave mechanics and that introducing such an index is fully consistent with the experimental results. Relation (1) between the vacuum wavelength Λ and the diffraction angle Θ remains unchanged because it follows from the structure of the crystal surface alone; the magnitudes of the selectively reflected wavelengths, which depend on the three-dimensional action of the atoms inside the crystal, are modified by the refractive index of the crystal interior.\par
+\noindent\footnotesize 1) A paper by Patterson (Nature 120. p. 46. 1927) deals theoretically with the possibility of a contraction factor.\par\normalsize
+\noindent\footnotesize 2) C. Eckart, Proc. Nat. Acad. Washington 12. p. 460. 1927.\par\normalsize
+\noindent\footnotesize 3) H. Bethe, Naturwissenschaften 15. p. 787. 1927 (cited as "Bethe I").\par\normalsize
+\origpage{58}
+\noindent\footnotesize 1) For now the wavelength λ in the crystal must naturally have the magnitude following from lattice-diffraction theory and no longer the vacuum wavelength Λ.\par\normalsize
+Since the vacuum wavelengths Λ follow from the measured electron velocity, and the crystal wavelengths λ can be computed from the known lattice of nickel, μ is determined as soon as it is decided which λ corresponds to a given Λ.\par
+Here again there are two possible assignments. One may associate each observed selectively reflected wavelength with the next larger wavelength predicted by lattice theory; this assignment, indicated by dots in Fig. 1, was first proposed by Davisson and Germer 2) and gives refractive indices μ < 1.\par
+There are, however, serious objections to this interpretation, arising largely from the wave-mechanical theory of the refractive index to be discussed presently 3), and also from the fact that for μ < 1 no electrons could emerge grazing from the crystal into the vacuum, whereas such "grazing beams" were observed by Davisson and Germer. 4) The experiments of Davisson and Germer can therefore be reconciled only by associating the observed wavelengths Λ to the next-shorter expected wavelength λ.\par
+\noindent\footnotesize 1) Cf. H. Bethe I, loc. cit.\par\normalsize
+\noindent\footnotesize 2) The "new assignment" was presented by Davisson and Germer II, Phys. Rev. 30. p. 705 as possible but improbable. According to a letter of early June 1928, D. and G. have now likewise adopted the new assignment.\par\normalsize
+\noindent\footnotesize 3) H. Bethe, Naturwissenschaften 16. p. 333. 1927. Cited as "Bethe II".\par\normalsize
+\noindent\footnotesize 4) Cf. H. Bethe II, Naturwissenschaften 16.\par\normalsize
+\origpage{59}
+This “new” assignment, shown by the solid lines in Fig. 1, gives refractive indices μ > 1.\par
+Theoretically the existence and magnitude of the refractive index follow at once from the Schrödinger differential equation, which the electron must satisfy.\par
+For our purposes we write the Schrödinger equation in the form (3). Here E denotes the accelerating potential and V the electrostatic potential, so that Ee is the total energy and −Ve the potential energy of the electron.\par
+Setting V=0 in vacuum and, in a first approximation, V=V0 constant inside the crystal gives plane-wave solutions with the vacuum and crystal wavelengths written in (4). Equivalently, the refractive index is μ=Λ/λ=√(1+V0/E), equation (5). We can already conclude that V0 must be positive.\par
+For −eV0 represents the potential energy of an electron in the crystal, referred to vacuum as zero, and hence also the potential energy of the conduction electrons already present in the crystal.\par
+If −eV0 were positive, the conduction electrons would have to leave the crystal spontaneously, whereas the Richardson effect shows that positive work must be expended to remove them. V0 must therefore be positive, and hence μ > 1, as required by our “new” assignment. On entering the crystal, the electrons are accelerated: the group velocity of the de Broglie wave increases from √(2eE/m) to √(2e(E+V0)/m), while the phase velocity, and therefore—because the total energy is unchanged—the wavelength, decreases in the same ratio.\par
+\noindent\footnotesize 1) In the two communications in the Naturwissenschaften I used the Schrödinger notation, which differs from that used here by the sign of V and the factor e in E and V.\par\normalsize
+\origpage{60}
+\mathref{47}{60}
+For the computation of the mean of V0, 179 volts was used as the basis.\par
+\noindent\textbf{Table 1 contains 1) the wavelengths capable of selective reflection observed by Davisson and Germer 2) as well as the direction 3) in which they are reflected, then the Miller indices h1, h2, h3 of the reflecting lattice plane (according to the}\par
+\noindent\footnotesize 1) The table is already contained in part in Bethe II.\par\normalsize
+\noindent\footnotesize 2) Cf. Davisson and Germer I and II, loc. cit.\par\normalsize
+\noindent\footnotesize 3) Cf. p. 55, footnote 4.\par\normalsize
+\origpage{61}
+new assignment), referred to cubic axes, and the corresponding crystal wavelengths λ, computed according to the lattice-diffraction formula (6) in which a denotes the side of the elementary cube (for Ni 3.52 Å).\par
+The third column from the right contains the refractive indices μ computed according to (2), the last the crystal potentials V0 following from them according to (5).\par
+The mean value of V0 is 14.8 volts. 1) In the second column from the right, V0 according to the "old assignment" is also given for comparison.\par
+To be sure, the "new assignment" at first presents a minor difficulty 2): The longest selectively reflectable wavelengths λ to be expected from lattice theory would have no corresponding values among the observed electron wavelengths Λ (cf. Fig.\par
+The electron waves in question, however, already have in the crystal a wavelength λ that approaches the lattice constant d of the "surface lattice".\par
+Because of the generally valid relation nλ = d sinθ (1a) the angle θ between the reflected beam and the normal to the crystal surface already becomes very large in the crystal, i.e. the beam propagates nearly parallel to the surface.\par
+Because of the refractive index μ > 1 the beam can then no longer emerge from the crystal into the vacuum, but total reflection at the crystal surface occurs.\par
+\noindent\footnotesize 3) Equivalently, the vacuum wavelengths Λ belonging to the longest expected wavelengths λ in the crystal, according to the equation Λ = λμ become larger than the lattice constant d, so that the surface-grating relation (1) can no longer be satisfied with any angle Θ.\par\normalsize
+\noindent\footnotesize 1) On the relation of this quantity to the Richardson effect cf. H. Bethe II, loc. cit., Rosenfeld and Witmer, Ztschr. f. Phys. 49. p. 736. 1928; this work § 10, p. 113ff.\par\normalsize
+\noindent\footnotesize 2) This difficulty moved Davisson and Germer to give up the new assignment. (Davisson and Germer II, loc. cit. p. 732). Cf. Bethe II, loc. cit. p. 334.\par\normalsize
+\noindent\footnotesize 3) Cf. the paper Bethe II, and especially p. 80 of this work.\par\normalsize
+\origpage{62}
+\mathref{66}{62}
+*) A dash means that the beam is not observable because of total reflection.\par
+Otherwise the expected emergence angle Θ is given. Table 2 lists, for each azimuth, the longest wavelengths capable of selective reflection predicted by lattice theory. In the (111) and (110) azimuths the longest first-order waves must undergo total reflection and therefore cannot be observed at all, whereas the corresponding electron beam in the (100) azimuth must emerge into the vacuum at grazing incidence.\par
+Precisely here, however, Davisson and Germer observed an especially strong "grazing beam".\par
+\noindent\footnotesize 1) The agreement with theory is not quite so good in the higher orders.\par\normalsize
+\noindent\footnotesize 1) “Grazing beams” (electron beams emerging at grazing incidence) were observed by Davisson and Germer in each of the three principal azimuths. They explained them by noting that, for grazing propagation, the path from one atomic layer to the next is very long, so a large fraction of the electrons scattered by deeper crystal layers is absorbed before reaching the surface. Most of the observed intensity is therefore supplied by electrons diffracted in the surface layer. A grazing emergent beam does not strictly require the waves scattered by all crystal layers to be mutually in phase—that is, it does not strictly require the three-dimensional Laue equations to be satisfied. The observed grazing-beam intensity will nevertheless be especially large when they are satisfied, precisely as in the (100) azimuth.\par\normalsize
+\origpage{63}
+Thus the longest-wavelength second-order beam reflected by the (440) plane in the (111) azimuth should emerge grazing, but it is not observed.\par
+This is probably due to the fact that in the second order the intensity falls off much more rapidly with decreasing Θ than in the first, and already at Θ = 70°, where reliable observations first become possible, the scattered waves of the uppermost atomic layer have exactly the opposite phase to those of the second.\par
+The absence of the beams to be expected at 232 and 248 volts in the (210) and (331) azimuths is also understandable because of their presumably small intensity.\par
+Another question is the irregularity of the third-order reflections in the (111) azimuth, which should agree with those in the (100) azimuth.\par
+The explanation for this follows only from the dynamical theory (§ 9).\par
+Overall, the disappearance of Laue spots through total reflection and the intensity of the “grazing beams” provide further support for the “new assignment” and give no support to the old one.\par
+\section*{§ 2. The Field of the de Broglie Waves Inside the Crystal}
+The elementary theory developed in the preceding section stands on the ground of Laue's purely wave-kinematical theory of X-ray reflections, only modified by a direction-independent refractive index.\par
+Like Laue's theory, the theory developed here can represent only a first approximation.\par
+This is already evident from the fact that we have, for simplicity, treated the electron potential in the crystal as constant, whereas a consistent treatment requires representing it as a spatial Fourier series. 1)\par
+If this circumstance is taken into account, one is led to a dynamical theory corresponding to Ewald's dynamical theory of X-ray reflections 2), and largely following its method.\par
+The solution proceeds roughly as follows. The wave function is represented as a superposition of plane waves; mathematically, ψ is expanded in a three-dimensional Fourier-like series.\par
+\noindent\footnotesize 1) At the center of the atoms V even becomes infinite as 1/r, and consequently the wavelength becomes infinitely small as r1⁄2. The ansatz we use here contains this fact implicitly.\par\normalsize
+\noindent\footnotesize 2) P. P. Ewald, Ann. d. Phys. 54. p. 514. 1917 (cited as Ewald III). Fourier series to that of the potential, but with the wave number of the incident beam in the crystal, k0, still undetermined.\par\normalsize
+\origpage{64}
+\noindent\footnotesize 1) There is therefore one equation for each plane-wave amplitude (that is, for each coefficient in the Fourier expansion of ψ).\par\normalsize
+Into these equations enter, besides the Fourier coefficients of the potential, which we must assume known, the known vacuum wave number K and the unknown wave number in the crystal (k0) of the incident wave.\par
+In addition, doubly infinitely many boundary conditions must be satisfied.\par
+The solution of the indicated system of equations proceeds so that the two amplitudes of the incident and the reflected wave are assumed large compared with the amplitudes of the remaining plane waves of the ψ-field, and all remaining amplitudes are expressed through these two.\par
+One then obtains two homogeneous equations between the two amplitudes assumed "large".\par
+The vanishing of their determinant yields as usual the dispersion equation, from which two different values result for the as yet unknown wave number k0.\par
+By a combination of two solutions with the two possible wave numbers k0, the boundary conditions can be satisfied, as in Ewald's theory.\par
+From the solution thus obtained one then determines the more accurate magnitude of the wavelengths capable of selective reflection, the intensity of the reflected beam, and the resolving and reflecting power of the crystal.\par
+As the origin of our coordinate system we choose the nucleus of any atom of the crystal surface.\par
+For the coordinate axes a1, a2 and a3 we choose, say, the usual crystallographic axes, although this choice is not essential.\par
+For a crystal system with orthogonal axes, we may of course assume a Cartesian coordinate system X, Y, Z.\par
+We shall occasionally do this later as well, but where possible we choose the vectorial notation, which can be applied to any obliquely-angled axis system.\par
+\noindent\footnotesize 1) The wave number (per unit length) is defined as 2π divided by wavelength.\par\normalsize
+\origpage{65}
+\mathref{101}{65}
+\mathref{102}{65}
+The index g in the Fourier expansion (7) at v\_g of course represents in each case an index triple g1, g2, g3, and (7) is really to be written as a triple sum over g1, g2, g3.\par
+That the expansion (7) really possesses the required periodicity, i.e. returns to the same value upon a displacement of the field point r by a multiple of the identity distances a1, a2, a3, say by r' = r1a1 + r2a2 + r3a3 follows at once from (8) and (9a).\par
+If the origin of coordinates is a center of symmetry of the crystal, then V(r) = V(−r) and consequently v\_g = v\_\{−g\}.\par
+This reduces the expansion (7) to a sum of cosines: U(r) = Σ\_g 2 v\_g cos 2π(gr). (7b)\par
+\noindent\footnotesize 1) Ewald III, loc. cit., p. 536, and especially Ewald, Ztschr. f. Kristallographie 56. p. 129. 1921 (cited as "Ewald IV").\par\normalsize
+\origpage{66}
+with real coefficients v\_g.\par
+\mathref{109}{66}
+To do so we first assume the crystal to be infinitely extended, i.e. we regard the ansatz (7) for the potential as valid in all space.\par
+We shall later impose the additional conditions arising from the presence of a crystal surface.\par
+The most obvious thing would be to attempt to solve the Schrödinger differential equation (3) by the ansatz of a plane wave ψ0 = c0 e\textasciicircum{}\{i(f0r)\} (10). Here, following Ewald1), we call f0 the propagation vector of the plane wave (10).\par
+It gives the direction of propagation of the plane wave; its absolute value k0 is called the wave number and is related to the wavelength λ0 of the plane wave k0 = 2π/λ0 (10a). If we enter the Schrödinger equation (3) with the ansatz (10) and take into account the Fourier expansion (7) of the potential, we would have to have... This equation evidently cannot be satisfied simultaneously for all field points r.\par
+Instead,\par
+\noindent\footnotesize 1) Ewald III, loc. cit., p. 525.\par\normalsize
+\origpage{67}
+that each plane wave c0e\textasciicircum{}\{i(f0r)\} in the periodic potential field V(r) of the crystal is conceivable at all only in conjunction with other plane waves c\_h e\textasciicircum{}\{i(f0+2πh,r)\}. This is simply due to the fact that V occurs multiplied by ψ.\par
+To take account of this circumstance, we set ψ = Σ ψ\_g e\textasciicircum{}\{i(f0+2πg,r)\} (11). We thus regard ψ as the superposition of a triply infinite family of plane waves with the propagation vectors f\_g = f0 + 2πg (11a) and the amplitudes ψ\_g, the index g of course again standing for the index triple g1, g2, g3.\par
+The waves f\_g are identical with all those waves that can arise from a “primary wave” ψ0e\textasciicircum{}\{i(f0r)\} according to the elementary interference theory.\par
+The propagation vector of the “primary beam” inside the crystal, f0, remains undetermined until the dispersion theory is carried through in § 5; but once f0 is given, one need only follow Ewald and locate the point of propagation, i.e. the point −f0/2π in the reciprocal lattice, and draw from there the radius vectors to all lattice points g of the reciprocal lattice, and one immediately obtains all propagation vectors f\_g/2π = f0/2π + g of all ψ-waves in the crystal.\par
+In each case the direction of the propagation vector f\_g gives the direction of propagation, its absolute value k\_g the wave number (equal to 2π divided by wavelength) of each plane wave.\par
+We can now substitute into the Schrödinger differential equation (3) with the ansätze (7) and (10), in which we also set for abbreviation: K =... (K denotes the wave number for V = 0.) Then (3) becomes Δψ + (K2 + U)ψ = 0.\par
+\mathref{122}{67}
+\origpage{68}
+Since this equation holds for every field point r, the coefficient of each exponential must vanish separately.\par
+This yields, with a corresponding change of the summation indices: ψ\_h(K2 − k\_h2) + Σ v\_g ψ\_\{h−g\} = 0, or, if we extract from the sum the term v0ψ\_h: ψ\_h(K2 + v0 − k\_h2) + Σ′ v\_g ψ\_\{h−g\} = 0 (13), where the prime denotes that v000 is to be excluded.\par
+(13) holds for every index triple h1, h2, h3 and thus represents a triply infinite scheme of equations valid inside the crystal, in each equation the amplitude of a ψ-oscillation ψ\_h occurring multiplied by a resonance factor, all other ψ-amplitudes multiplied each by a Fourier coefficient of the potential.\par
+The system of equations represents the exact solution of the Schrödinger equation inside crystals, only inelastic collisions being disregarded.\par
+This distinguishes our method fundamentally from Born’s1), which seeks to grasp the processes in the collision of an electron with an atom by successive approximation.\par
+That Born’s method is not adapted to the treatment of crystal diffraction is shown by the fact that Zwicky2) could explain from the first approximation according to Born’s method only the occurrence of crystal diffraction at all, but not the refractive index for the de Broglie wave.\par
+On the other hand, the method developed here is not applicable to diffraction by a single atom3), but is essentially conditioned by the regular arrangement of the atoms in the crystal, as a consequence of which diffraction by the single atom, whose structure is so far not sufficiently known, recedes behind diffraction by the arrangement of the atoms.\par
+Our system of equations (13) is the necessary condition for the existence of “dynamical equilibrium” in the crystal, i.e. for the wave field ψ being regenerated again and again by diffraction at the crystal atoms.\par
+The only remaining freedom is\par
+\noindent\footnotesize 1) M. Born, Ztschr. f. Phys. 33, p. 803, 1926.\par\normalsize
+\noindent\footnotesize 2) F. Zwicky, Proc. Nat. Acad. Amer. 12, p. 518, 1927.\par\normalsize
+\noindent\footnotesize 3) The method developed by Faxén and Holtsmark comes closest to ours for diffraction by a single atom, which likewise refers to the actual ψ-field of the diffracted electron in the diffracting atom. Ztschr. f. Phys. 45, p. 307, 1927.\par\normalsize
+\origpage{69}
+the choice of the propagation vector f0 and the amplitude ψ0 of the primary wave; but only as long as the crystal is truly infinite and has no interface with another medium.\par
+The surface phenomena treated in the following section determine the constants of the “primary beam”.\par
+\section*{§ 3. Formulation of the Boundary Conditions}
+We now no longer assume the crystal to be infinitely extended, but bounded by the surface z = 0 (14), and by z we understand a coordinate in the direction of the crystal normal.\par
+The crystal is in the half-space z > 0, the half-space z < 0 is vacuum.\par
+Then V = 0 for z < 0, V = U for z > 0 (15). For each of the two regions, the Schrödinger equation has solutions of the form Δψ + (K2 + U)ψ = 0 (3a). In the crystal the solution of (3a) is, as we have seen, a superposition of triply infinitely many plane waves (11), whose amplitudes ψ\_g are coupled to one another through (13).\par
+In the vacuum we obtain as solution plane waves c e\textasciicircum{}\{i(Kr)\} with the wave number |K| = K, which can be superposed arbitrarily; Ψ = Σ Ψ\_m e\textasciicircum{}\{i(K\_m r)\} (z < 0) (16), |K\_m| = K, Ψ\_m arbitrary. [Note: the summation index in (16) is printed as g in the original.] The question is in what relation the wave fields in the crystal and in the vacuum stand to one another.\par
+\origpage{70}
+According to Faxén and Holtsmark1), on both sides of a potential jump both the wave function ψ and its normal derivative ∂ψ/∂n have the same value: ψ = Ψ, ∂ψ/∂n = ∂Ψ/∂n (17). If, then, r′ denotes a vector in the crystal surface, the following must hold: [equations (18)]. n is a unit vector in the direction of the crystal normal.\par
+Equations (19) hold for every point r′ of the crystal surface.\par
+Hence the coefficients of the individual periodic functions of r′ must vanish separately.\par
+Now two exponentials, e.g. e\textasciicircum{}\{i(K\_m r′)\} and e\textasciicircum{}\{i(f\_g r′)\}, evidently have the same periodicity in the surface of the crystal only if the projections of the propagation vectors K\_m and f\_g onto the crystal surface coincide.\par
+We shall therefore resolve the propagation vectors into a component normal to the surface and a tangential component: K\_m = A\_m T\_m + Γ\_m n, f\_g = α\_g t\_g + γ\_g n (19). Here T\_m and t\_g denote unit vectors in the direction of the projections of the propagation vectors K\_m and f\_g onto the crystal surface.\par
+The surface conditions (18) must then be satisfied separately for all those waves whose propagation vectors have the same projection onto the surface.\par
+Among the vacuum waves, since |K\_m| = K is fixed, there are only two with a given tangential component A\_m T\_m.\par
+Their propagation vectors K\_m and K\_m′ differ in the sign of their normal component: Γ\_m = −Γ\_m′ (20).\par
+\noindent\footnotesize 1) Faxén and Holtsmark, Ztschr. f. Phys. 45, p. 307, 1927. The same boundary conditions can be obtained by Ewald’s method (Ann. d. Phys. 49, pp. 1–38 and pp. 117–143, 1916). We cite these papers as “Ewald I and II”.\par\normalsize
+\origpage{71}
+For finite amplitudes, however, (Ψ\_m + Ψ\_m′)e\textasciicircum{}\{iA\_m(T\_m r′)\} = 0 and (Ψ\_m Γ\_m − Ψ\_m′ Γ\_m′)e\textasciicircum{}\{iA\_m(T\_m r′)\} = 0 can never be satisfied simultaneously.\par
+Consequently, simultaneously with the incident (K\_m) and reflected (K\_m′) vacuum waves, refracted waves f\_g must also occur in the crystal, whose propagation vectors have the same projection onto the crystal surface as the vacuum waves, i.e. for which A\_m T\_m = α\_g t\_g (21) holds.\par
+The number of these crystal waves is not, like that of the vacuum waves, limited to two1), because the wave number of the crystal waves is arbitrary.\par
+We thus obtain [equations (22)]. On the right, the sum runs over all crystal waves for which (21) is satisfied.\par
+For the vacuum waves we obtain [equations (23)]. These, together with (21), are the desired boundary conditions, i.e. the relations between the directions and amplitudes of the vacuum and crystal waves.\par
+From the agreement of the vacuum and crystal waves with respect to the tangential components of the propagation vectors, the law of refraction follows for each pair of crystal wave and vacuum wave.\par
+Indeed, if we denote the angle between the crystal normal and the direction of a crystal wave by θ\_h and the corresponding angle for the vacuum wave by Θ\_h, then then A\_h = K sin Θ\_h = k\_h sin θ\_h = α\_h.\par
+\noindent\footnotesize 1) If the surface of the crystal is a lattice plane, infinitely many crystal waves with given tangential component occur.\par\normalsize
+\origpage{72}
+and from this follows the law of refraction sin Θ\_h / sin θ\_h = k\_h / K = μ\_h (24), with, of course, a refractive index that varies from case to case.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 72).\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 72).\par
+Equation (28) shows that the positions and spacings of the grating lines formed by the surface atoms determine all tangential reciprocal vectors g\_tang and therefore all diffracted vacuum waves (26a) arising from the primary beam (25). This reproduces the result already stated in § 1: for a fixed incident direction and vacuum wavelength, the directions of all beams that can emerge back into the vacuum are determined solely by the structure of the crystal surface and are independent of processes inside the crystal.\par
+\origpage{73}
+termination of the wavelength at which selective reflection can occur at all (for given direction of incidence), and of the intensity of the reflected beam, is influenced by the processes in the crystal (cf. p. [truncated]\par
+\section*{§ 4. Reduction of the dynamical equations to two}
+The system of equations ψ\_h(K2 + v0 − k\_h2) = −Σ ψ\_g v\_\{h−g\} (13) of the dynamical equations cannot, of course, be solved exactly.\par
+We may assume that the sum on the right does not become exceptionally large for any particular index triplet h1,h2,h3, and in general does not become exceptionally small either.1) The magnitude of ψ\_h is therefore governed essentially by the resonance factor K2+v000−k2\_\{h1h2h3\}. For arbitrary K this factor can, in general, be small for only one ψ component.\par
+But since the incident (primary) wave has a large amplitude under all circumstances, the resonance factor K2 + v000 − k0002 must be small under all circumstances.\par
+Then, however, there exist no further (reflected) waves with small resonance factor, i.e. large amplitude, and outwardly only the continuous scattering originating from the thermal motion of the crystal atoms will be observable.\par
+But for quite definite wave numbers K of the incident wave, two resonance factors become small simultaneously.2) There then occurs the “selective reflection” in a definite direction, treated wave-kinematically in § 1.\par
+The condition set up here of the simultaneous vanishing of two resonance factors is identical with the condition set up in § 1 for selective reflection, namely that the Laue equations modified by a refractive index are satisfied.\par
+\noindent\footnotesize 1) On the becoming small and vanishing of the sum cf. § 8, extinction laws.\par\normalsize
+\noindent\footnotesize 2) Possibly more, We exclude this case from consideration because of the mathematical difficulties connected with it. On the case of symmetric reflection cf. § 9.\par\normalsize
+\origpage{74}
+In order first to study the geometrical relations for two strong beams, we again use the illustration of the propagation vectors in the Ewald reciprocal lattice.\par
+As already remarked in § 2, the propagation vectors f\_h = f0 + 2πh (11) can be represented as the radius vectors that can be drawn from the propagation point A with coordinates −α/2π, −β/2π, −γ/2π to all lattice points h = h1b1 + h2b2 + h3b3 of the reciprocal lattice.\par
+Here the propagation point A is in general no lattice point.\par
+The strict Laue equations with the modification by a refractive index would now require that the two resonance factors of the primary and secondary beams be exactly zero: k02 = k\_h2 = K2 + v0 = κ2 (29).\par
+Geometrically this means that the lattice points (0, 0, 0) and (h1, h2, h3) of the reciprocal lattice must both lie on the propagation sphere, i.e. on the sphere of radius κ/2π = (1/2π)√(K2 + v0) about the propagation point A.\par
+We shall still obtain two strong waves even when the two points of the reciprocal lattice lie in the neighbourhood of the propagation sphere, and the intensity ratio of the two beams will depend precisely on the distance of the two points of the reciprocal lattice from the propagation sphere.\par
+These distances ε1 = κ − k0, ε2 = κ − k\_h (30) we call resonance errors.\par
+They stand in a geometrical relation to one another, because according to the preceding paragraph the propagation vector of the wave incident from the vacuum K = AT + Γn (31), which we have to presuppose as known, agrees with the propagation vector of the primary wave in the crystal f0 = αt + γn (31a) with respect to the two components parallel to the surface: AT = αt.\par
+\origpage{75}
+The propagation point is thus already fixed to a quite definite normal to the crystal surface (at the reciprocal lattice) drawn through the point −αt/2π.\par
+On this parallel there exists a point L, which we designate with Ewald as the Laue point, for which the origin of the reciprocal lattice comes to lie exactly on the propagation sphere.\par
+In this case the lattice point h will possess a quite definite distance from the propagation sphere, which we designate as the excitation error.\par
+\mathref{186}{75}
+ζ represents the resonance error ε2 for the case that ε1 is zero. ζ stands in a simple relation to κ, if we, in agreement with the experiments of Davisson and Germer, assume that the direction of the incident beam in the crystal remains constant once and for all.\par
+\origpage{76}
+For then the excitation error must vanish for a quite definite wave number κ0, i.e. there must be a wave number κ0 which satisfies the Laue equations exactly and for which consequently both lattice points (0, 0, 0) and (h1, h2, h3) lie simultaneously on the propagation sphere.\par
+\mathref{190}{76}
+\mathref{191}{76}
+\mathref{192}{76}
+Using the excitation error ζ, we can express the two resonance errors ε1 and ε2 in terms of the distance d/2π between the propagation point A and the Laue point L.\par
+\mathref{194}{76}
+ε1 = d cos θ1, ε2 = d cos θ2 + ζ (34); and the task below is to compute the 'adaptation' d for given excitation error.\par
+\origpage{77}
+We now proceed to the treatment of the system of equations (13).\par
+For this we assume, as already indicated in § 2, p. 63,\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 77).\par
+We then compute all the remaining amplitudes from the equations ψ\_g(κ2 − k\_g2) = −Σ v\_p ψ\_\{g−p\} (13) so that in the sums on the right-hand side we take into account only those terms which contain the two large amplitudes c1 and c2 of the two principal waves.\par
+so that in the sums on the right-hand side we take into account only those terms which contain the two large amplitudes c1 and c2 of the two principal waves.\par
+This gives for the 'small' amplitudes the values ψ\_g = −(c1v\_g + c2v\_\{g−h\})/(κ2 − k\_g2) (35), which we can now insert into those two equations of the system (13) which refer to the two principal waves.\par
+\mathref{202}{77}
+\origpage{78}
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 78).\par
+Of course one could carry the approximation further.\par
+But this would change only the numerical value of the quantities V11, V12, V22, not, however, the structure of equations (36), which alone matters in principle.\par
+\mathref{206}{78}
+\origpage{79}
+\section*{§ 5. The dispersion equation}
+Determination of the propagation vectors. In the two equations (36a) which we obtained in the preceding paragraph, besides the two amplitudes c1 and c2 of the principal waves, the quantity d decisive for the determination of the propagation vectors of the dynamical waves is still unknown.\par
+\mathref{209}{79}
+Its solution is [equation (39)]. By the form (39) of the solution, in which a square root occurs, we are led, as Ewald in the dynamical theory of X-ray reflections1), to distinguish two cases: 1.\par
+Laue case: Primary and secondary beams are both directed away from the entrance face of the primary beam.\par
+Then cos θ1 and cos θ2 are both positive, so the two solutions for d and hence all propagation vectors are always real.\par
+This case is realized in the experiments of Thomson2) and Rupp3).\par
+To be sure, a somewhat different case is present there insofar as microcrystalline metals are concerned.\par
+One can nevertheless state definitely that a complex propagation vector, which in the observation of the electrons passing through the crystal would be connected with strong attenuation of the beam to be observed4), cannot occur.\par
+\noindent\footnotesize 1) P. P. Ewald III, loc. cit., pp. 571ff. and especially pp. 585ff.\par\normalsize
+\noindent\footnotesize 2) G. P. Thomson, loc. cit.\par\normalsize
+\noindent\footnotesize 3) E. Rupp, loc. cit.\par\normalsize
+\noindent\footnotesize 4) For complex propagation vectors the amplitude (and intensity) decreases exponentially on advancing into the interior of the crystal, as will be shown in the next paragraph.\par\normalsize
+\origpage{80}
+Bragg case: The secondary beam emerges again on the entrance side of the primary beam, so cos θ2 is negative.\par
+\mathref{221}{80}
+As we shall see in the next paragraph, in this case the entire intensity of the incident beam is transferred to the reflected beam.\par
+We call this case, which occurs over a certain range of ζ, selective reflection, in keeping with the terminology introduced in § 1.\par
+Our region of “selective reflection” represents, so to speak, the core of a Laue spot.\par
+The analogue of selective reflection naturally occurs also for X-rays.\par
+Ewald designates the phenomenon as “total reflection”, but this designation could lead with us to confusions with the total reflection discussed at the end of § 1, which occurs when the electrons emerge from the crystal and is connected with the refractive index μ > 1.\par
+The latter phenomenon is the exact analogue of optical total reflection and rests wave-theoretically on the fact that the normal component Γh of the emerging vacuum wave (§ 3) becomes purely imaginary, while the normal component of the associated crystal wave is real.\par
+\mathref{228}{80}
+\mathref{229}{80}
+\origpage{81}
+\mathref{230}{81}
+(41) It is interesting that for electron waves selective reflection lets the entire intensity incident from the vacuum return into the vacuum, whereas total reflection, because of the refractive index μ > 1, whereas total reflection retains the electrons inside the crystal.\par
+For X-rays, because of μ < 1, both phenomena act in the same sense, namely that the whole intensity of the X-rays returns into the vacuum.\par
+In order to orient ourselves more closely about the region of selective reflection, we take, for a second approximation1), the quantities V11, V12, V22 constant in the whole wavelength region to be considered.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 81).\par
+Passing from excitation error to the incident wave number according to (33), and taking the incident direction to be normal to the surface as in the Davisson–Germer experiment, gives the wave-number form (42a)–(43a) reproduced exactly in the companion audited translation (rev20).\par
+\noindent\footnotesize 1) As a first approximation we shall consider the simple theory with refractive index. An indication of a third approximation we give in § 7.\par\normalsize
+\origpage{82}
+The resulting resolving power is of the order given in (43a); the exact expression is retained in the companion audited translation (rev20).\par
+(44) Δλ 2Δκ 2|V12 | cos θ |V12 | We shall come back√ to this in §§ 6 and 12.\par
+\mathref{240}{82}
+\mathref{241}{82}
+\mathref{242}{82}
+\section*{§ 6. Calculation of the intensities}
+\mathref{244}{82}
+\origpage{83}
+\mathref{245}{83}
+For each pair of propagation vectors in (48) there now follows from the 1st equation (36a) 2κd cos θ1 − V11 c2 = c1 V12 a definite ratio between the amplitudes of the primary and secondary beams, which, according to (46a) and (43), reads: ⎧ √ \{c2′ = c1′ √− cos θ1 (W + W 2 − 1) \{ cos θ2 ⎨ (49) √ \{c′′ = c′′ √− cos θ1 (W − W 2 − 1). \{ 2 1 cos θ2 ⎩ The remaining question is how the intensity of a given wave incident from the vacuum ψ0 = C0 ei(K0 r) = C0 ei(A0 T0 +Γ0 n,r) (50) is distributed over the two dynamically possible pairs of primary and secondary waves.\par
+The surface conditions derived in § 3 now give the answer to this question.\par
+We found there relations between the amplitudes of the vacuum waves and of the crystal waves whose propagation vectors agree with respect to the projection onto the surface.\par
+In our intensity calculations we shall now, in accordance with the degree of our approximation, take into account only those vacuum waves which correspond to the two “principal waves” in the crystal.\par
+Strictly speaking, equation (23) associates two vacuum waves with each of the primary and secondary crystal waves, on both the entrance and exit sides: one incident from the vacuum and one emerging into it. Of each pair, however, only one has appreciable intensity.\par
+\origpage{84}
+For the two “principal waves” k1 and k2 become nearly equal to κ = √K 2 + v0, i.e. for not too “soft” beams (K 2 ≫ v0 ) also approximately k1 = k2 = K.\par
+But since the components parallel to the surface of corresponding crystal and vacuum waves agree: 26 αg = Ag, for the principal waves the corresponding normal components are also either approximately equal or opposite to one another: γ1 ≈ ±Γ1, γ2 ≈ ±Γ2.\par
+Then one of the two vacuum waves in equations (23) is always nearly zero and is neglected in our approximation. Only one vacuum wave remains: an incident wave on the entrance side and an emergent wave on the exit side of each crystal beam.\par
+On the entrance side of the primary waves f1′ and f1′′, ψ0 is incident from the vacuum.\par
+\mathref{258}{84}
+\mathref{259}{84}
+\origpage{85}
+\mathref{260}{85}
+\mathref{261}{85}
+\mathref{262}{85}
+(55a) W 2 − 1 cos ωH + iW sin ωH The last beam is the one observed in the experiments of Davisson and Germer as the “reflected” beam.\par
+\noindent\footnotesize 1) z denotes a coordinate in the direction of the normal to the surface pointing into the crystal.\par\normalsize
+\origpage{86}
+However, what interests us less now is the mathematical expression for the various electron waves, but above all the number of electrons transported per unit time through the cross section of each beam, the “current” S.\par
+This is computed as the product of the electron velocity with the cross section of the electron beam and the number of electrons present per unit volume.\par
+The electron velocity is directly proportional to the wave number (inversely to the wavelength); the cross section 28 of the electron beam is directly proportional to the cosine of the angle between it and the normal to the crystal surface (cf. Fig.\par
+\mathref{268}{86}
+4 q2 cos θ2 product of both quantities is therefore proportional to the normal component of the propagation vector.\par
+The number of electrons per unit volume is known to be given by the square of the absolute value of the amplitude of the de Broglie wave.\par
+We denote the current of the primary beam in vacuum C02 Γ1 = S0 (56) and now have to distinguish two cases: 1.\par
+Outside the region of selective reflection\textasciicircum{}\{1)\} we have W > 1, hence η and ω real.\par
+\mathref{273}{86}
+\noindent\footnotesize 1) The same considerations always hold for the Laue case (cf. p. 79).\par\normalsize
+\origpage{87}
+\mathref{275}{87}
+This is of course already required because otherwise in certain layers of the crystal there would be a permanent inflow, in others a permanent loss of electrons, whereas the entire electron wave field we are considering is supposed to be stationary.\par
+\mathref{277}{87}
+This finding is analogous to Ewald’s Pendellösung\textasciicircum{}\{1)\} in the case of real resonance errors.\par
+\mathref{279}{87}
+The total current of the primary and secondary beams emerging from the crystal is of course equal to the incident electron current: S = S 1 + S2 = S 0.\par
+\noindent\footnotesize 1) Ewald III, loc. cit., p. 586.\par\normalsize
+\noindent\footnotesize 2) This is the vacuum wave belonging to the primary beam on the exit side, which we had not listed separately so far.\par\normalsize
+\origpage{88}
+The intensity of the diffracted as well as of the transmitted primary beam according to (57) and (57a) is so sensitive to a change of the crystal thickness that it passes from maximum to minimum already upon a change of a few atomic layers.\par
+It will therefore not be observable because of the slightest irregularities of the crystal.\par
+Consequently we must disregard these “interferences at the plane-parallel plate” and average over the thickness of the crystal.\par
+\mathref{286}{88}
+In the region of selective reflection, the selection error is W < 1 and accordingly η and ω imaginary.\par
+\mathref{288}{88}
+\mathref{289}{88}
+\mathref{290}{88}
+\origpage{89}
+\mathref{291}{89}
+The formulas so far refer to fixed given wavelength and direction of incidence.\par
+\mathref{293}{89}
+\mathref{294}{89}
+The variation of the intensity of the reflected beam as a function of the quantity W linked to the wave number κ by equation (45) is shown in Fig.\par
+\mathref{296}{89}
+For a perfectly defined incident direction, the resolving power is given by equation (64). For wavelengths near 1 Å its numerical value is of order 100.\par
+\noindent\footnotesize 1) The formula holds for normal incidence of the primary beam. Otherwise √ √ cos θ takes the place of cos θ, where θ1 and θ2 denote the angles between the incident and the reflected beam, respectively, and the crystal normal.\par\normalsize
+\origpage{90}
+For the rest, the intensity variation of the reflected beam corresponds to the curve calculated by Ewald\textasciicircum{}\{1)\} (cf. curve 4).\par
+The intensity formulas set up here may of course in no way be taken as exact.\par
+For one thing the Reflected intensity as a function of the selection error W. Fig.\par
+5 quantities V11, V12, V22 are by no means independent of the wave number κ, as assumed here.\par
+Besides, a large part of the intensity is certainly lost through the “weak beams” of the dynamical wave system neglected here, and a still more considerable part drops out of the number of electrons observed at all through inelastic collisions.\par
+In addition, the incident electron beam by no means consists exactly of electrons of a definite direction.\par
+This fact of course broadens considerably the wavelength region to which the crystal responds with a definite lattice plane, and at the same time diminishes the intensity of the reflected beam relative to the incident one.\par
+Furthermore, the influence of temperature (Debye factor) has remained unconsidered, which likewise weakens the reflected beam.\par
+\noindent\footnotesize 1) Ewald III, loc. cit., p. 593, Fig. 19 (Bragg case).\par\normalsize
+\origpage{91}
+\section*{§ 7. Sketch of a third approximation}
+\mathref{310}{91}
+\mathref{311}{91}
+A further approximation, which at least takes into account the linear term of the dependence of the dynamical potential quantities on the wave number, can be carried out without difficulty.\par
+We assume again — corresponding to the experiments of Davisson and Germer — that the direction of the primary beam in the crystal is invariably given, and that C0 is the propagation vector of that primary beam running in this prescribed direction which would satisfy the Laue equations exactly [cf. derivation of Eq.\par
+\mathref{315}{91}
+\mathref{316}{91}
+\origpage{92}
+\mathref{317}{92}
+We now expand the dynamical potential quantities in the small quantities ζ and d and break off after the first term of the expansion.\par
+\mathref{319}{92}
+\origpage{93}
+\mathref{320}{93}
+\mathref{321}{93}
+Then there is also in the third approximation a region of “selective reflection” (W < 1).\par
+It is bounded by two wave numbers κ1 and κ2, which result as roots of the equation W 2 = 1, quadratic in κ.\par
+The intensity formulas of the preceding paragraph remain valid in the third approximation; only the definitions of w and W change.\par
+\origpage{94}
+But w is sometimes also imaginary.\par
+Then it could under certain circumstances happen that w2 and (σ11 τ22 − σ12 τ12 )2 have the variation shown in Fig.\par
+Then the region of selective reflection (W < 1) is split into two separate re\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 94).\par
+6 (for notation see there).\par
+Splitting of the region of selective reflection (thick κ-axis). Fig.\par
+It would be conceivable that the doubly observed reflection (642) in the \{110\} azimuth at 170 and 188 volts could be traced back to such a splitting.\par
+\section*{§ 8. Relation to the continuum theories of X-ray reflection. Extinction laws}
+Our theory of electron diffraction by crystals developed here stands in relation to the so-called “continuum theories” of X-ray reflections, which use the Fourier representation of the electron density (number of electrons per unit volume) in the crystal: ρE (r) = ∑ ρgE e2πi(gr) (74) g for the computation of the atomic form factors important for the intensity of the diffracted X-rays.\par
+\noindent\footnotesize 1) W. H. Bragg, Phil. Trans. Roy. Soc. A. 215. p. 253. 1925.\par\normalsize
+\origpage{95}
+first showed that the coefficient ρh of the Fourier representation of the electron density directly gives the atomic form factor for the X-ray reflection (h1 h2 h3 ).\par
+Wentzel\textasciicircum{}\{1)\} arrived at the same result by wave-mechanical methods.\par
+On the basis of this fact the distribution of the electrons in crystals, particularly in alkali halides, has been empirically determined by various authors\textasciicircum{}\{2)\} from the measured intensities of the X-ray pattern.\par
+Recently James, Waller and Hartree\textasciicircum{}\{3)\} 35 have established that the electron distribution in NaCl crystals determined empirically in this way agrees well with the distribution which Hartree\textasciicircum{}\{4)\} has computed theoretically by a wave-mechanical method developed by him.\par
+Furthermore a dynamical continuum theory of X-ray reflections has been worked out by Lohr\textasciicircum{}\{5)\} and Schlapp\textasciicircum{}\{6)\}.\par
+From the Fourier coefficients of the electron density, which determine the atomic form factor, one can now obtain directly the Fourier coefficients of the potential decisive for electron diffraction.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 95).\par
+The charge is expressed in multiples of the elementary quantum.\par
+In a crystal, V, ρ\_E, and ρ\_K may all be expanded in Fourier series. The Fourier coefficient of the nuclear charge, ρ\_g\textasciicircum{}K, is obtained from the nuclear charges and basis-atom coordinates by the relation given on p. 95 of the companion audited translation (rev20).\par
+\noindent\footnotesize 1) G. Wentzel, Zeitschr. f. Phys. 43. p. 1. 1927.\par\normalsize
+\noindent\footnotesize 2) Among others: Duane, Proc. Nat. Acad. Sci. 11. p. 489. 1925; Havighurst, ibid. p. 502, 507 and Phys. Rev. 29. p. 1. 1927; James and Miss Firth, Proc. Roy. Soc. A. 117. p. 62. 1927.\par\normalsize
+\noindent\footnotesize 3) James, Waller and Hartree, Proc. Roy. Soc. A. 118. p. 334. 1928.\par\normalsize
+\noindent\footnotesize 4) Hartree, Cambridge Phil. Soc. Proc. 24. p. 89, 111. 1928. || 5) E. Lohr, Wiener Ber. 133. p. 517. 1924; 135. p. 655. 1926.\par\normalsize
+\noindent\footnotesize 6) L. Schlapp, Phil. Mag. 1. p. 1009. 1926.\par\normalsize
+\origpage{96}
+(a1 [a2 a3 ]) i i The Fourier coefficient ρg shall be known, e.g. through intensity measurement of the X-ray reflection (g1 g2 g3 ).\par
+Then for the corresponding Fourier coefficient of the potential there simply follows e Vg = (ρK − ρgE ) (77) πg2 g g is the absolute value of the vector g in the reciprocal lattice.\par
+Despite the far-reaching analogy between the results of the dynamical theory of X-ray reflections and our theory of electron diffraction, and despite the relation just discussed between the fundamental 36 quantities of both processes, there nevertheless exist far-reaching differences.\par
+The reason for this is actually only a quantitative one: The influence of the crystal fields on the electron waves is, at equal wavelength, much greater than that of the “oscillating dipoles” of the crystal on the X-rays.\par
+This already shows in the refractive index, which deviates from unity by some hundredths for electrons, by only millionths for X-rays.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 96).\par
+This means that the de Broglie waves of the field in the crystal for which the resonance denominators are not small can nevertheless retain a non-negligible intensity and exert back-action on the strong beams.\par
+This reaction is expressed in the “dynamical potential quantities” V11, V12, V22.\par
+In X-ray diffraction, by contrast, the amplitudes of waves whose reciprocal-lattice points lie far from the propagation sphere decrease so rapidly that the weak-beam intensities become negligible; no back-action need be included.\par
+\origpage{97}
+The same occurs for electrons of much smaller wavelengths, i.e. about in the region investigated by G.\par
+Thomson of E = 15 to 60 kV corresponding to λ = 0.1 to 0.05 Å.E.\par
+The sums in the potential quantities disappear, and in the case of a reflected beam V11 = V22 = 0 and V12 = −vh.\par
+The “reaction” (back-action) of the weak beams on the primary and secondary beams has, first, the consequence that the magnitude of the selectively reflectable wavelength is determined not only by the refractive index, but in addition also by all Fourier coefficients of the potential vg, i.e. by the full spatial variation of the potential.\par
+For X-rays and for electrons of very high velocity these quantities are already determined by the refractive index.\par
+Loosely connected with the reaction is the small resolving power and large reflecting power of the crystal for de Broglie waves.\par
+Furthermore, for electrons the expressions for the integrated reflecting power of a lattice plane (h1 h2 h3 ), i.e. for the reflected intensity on bombardment with electrons of a larger velocity range, become considerably more complicated.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 97).\par
+(62) κ(1 + cos θ) κ(1 + cos θ) g κ − kg2 Here the “reaction” of the weak beams enters again.\par
+For X-rays, as mentioned above, the “integrated reflecting power” is simply proportional to ρhE.\par
+The same holds again for very fast electrons: V12 becomes there equal to −vh.\par
+The extinction laws too no longer agree under certain circumstances for electron and X-ray diffraction.\par
+The X-ray reflection (h1 h2 h3 ) is known to be extinguished when the corresponding point of the reciprocal lattice has weight zero (Ewald IV), i.e. when ρhE = ρhK = vh = 0 37 holds.\par
+If the direct coefficient v\_h vanishes, the electron wave ψ\_h cannot couple directly to the primary wave. It can nevertheless acquire a finite amplitude indirectly through other nonzero components in the coupled-wave sum, as shown explicitly in the equations in the companion audited translation (rev20).\par
+\origpage{98}
+But it can happen under certain circumstances that in the sum on the right-hand side a non-vanishing amplitude ψg occurs with a coefficient vh−g different from zero, so that ψh acquires a finite amplitude indirectly.\par
+The electron reflection (h1 h2 h3 ) will then not be extinguished even for vanishing Fourier coefficient vh, if two coefficients vg and vh−g are simultaneously different from zero.\par
+For the simplest structures, such a breaking of the extinction laws cannot occur.\par
+For the base-centered lattice, e.g., X-ray reflections are extinguished when h1 + h2 is odd.\par
+Thus, in order that vg ≠ 0, g1 + g2 ≡ 0 (mod 2) must hold, and in order that vh−g ≠ 0, (h − g)1 + (h − g)2 ≡ 0 (mod 2) must hold.\par
+From this, however, follows h1 + h2 ≡ 0 (mod 2), hence vh ≠ 0.\par
+Here therefore no electron reflection can occur through the “reaction” of weak beams when the corresponding X-ray reflection is extinguished.\par
+The same holds e.g. for the face-centered and for the body-centered lattice.\par
+If, on the other hand, extinction is observed for X-rays when a definite index or an index sum (or difference) is divisible by a certain number p, then this extinction law is in general broken for electron diffraction.\par
+(h1 h2 h3 ) be extinguished when h1 ≡ rp (mod np), where p denotes an integer > 1, and r can run through one or several numbers in the series 0, 1 ... n − 1.\textasciicircum{}\{1)\} Let, on the other hand, h1 ≢ 0 (mod p)\par
+\noindent\footnotesize 1) The two other indices h2 and h3 may still satisfy fairly arbitrary conditions which do not interest us here. Exactly the same holds of course when e.g. the extinction law reads h1 + h2 ≡ rp (mod np), etc.\par\normalsize
+\origpage{99}
+— under the same conditions for h2, h3 — not extinguished.\par
+Then always vg ≠ 0, if g1 ≢ 0 (mod r), vh−g ≠ 0, if (h − g)1 ≢ 0 (mod p), i.e. for instance (h − g)1 ≡ rp − g1 (mod np).\par
+The electron reflection h thus occurs although h1 ≡ rp (mod np), i.e. vh = 0.\par
+38 An example of this is e.g. diamond.\par
+The following are extinct: 1. all reflections with “mixed” (even and odd) indices, 2. all reflections for which h1 + h2 + h3 ≡ 2 (mod 4).\par
+The second law is broken for electrons, for e.g. vg ≠ 0, if g1 + g2 + g3 ≡ 1 (mod 4) and vh−g ≠ 0, if (h − g)1 + (h − g)2 + (h − g)3 ≡ 1 (mod 4). ψh thus occurs even when h1 + h2 + h3 ≡ 2 (mod 4).\textasciicircum{}\{1)\} SiC (carborundum II) behaves similarly.\par
+Here the X-ray diffraction h1 − h2 ≡ 0 (mod 3) is extinguished [unless h3 ≡ 0 (mod 6), which is however irrelevant].\par
+This extinction likewise no longer occurs in electron diffraction.\par
+By contrast, all extinction laws h1 ≢ 0 (mod p) and similar ones remain in force.\par
+For here vg and vh−g are non-zero only when g1, (h − g)1 and consequently also h1 are divisible by p.\par
+In this case electron interference beams can only arise when vh ≠ 0, i.e. when they already arise directly from the primary beam.\par
+For high electron velocities the “indirect reflection” due to the reaction of the weak [conFootnotes: 1) It is not inconceivable that exactly the corresponding phenomenon is partly responsible for the imperfect extinction of the X-ray reflection (222) in diamond.\par
+Since diamond is an ̄ ̄ etc., may suffice to produce ideal crystal, the small influence of the “weak” beams e.g.\par
+(111), (111), the reflection (222) “indirectly”. || Translator’s notes on symbols: (i) The symbol printed as a swash italic p (e.g. in ξ = 2rp na0 and in (3N p 8π)) is transcribed exactly as printed; in context it plays the role of the effective nuclear charge / number of conduction electrons.\par
+(ii) In eq.\par
+(81) the subscripts of the last terms of G2 and g ̄ are barely legible at this scan resolution (they look like “2”); they are transcribed as g3 in agreement with the parallel definitions (80) and (80a) and the stated permutation symmetry of the three components.\par
+(iii) In the Wi equation the original prints p in (3N p 8π) but a capital Z 2/3 in the second half; the surrounding text denotes the number of conduction electrons per atom by z.\par
+\origpage{100}
+Of course, [such] rays are no longer in question.\par
+At low velocities it may well be observed, provided a conducting crystal with a suitable structure is found.\par
+However, the inelastic collisions strongly attenuate all secondary beams ψg, and this attenuation occurs twice for the “indirectly reflected” beams, since (in Bragg’s picture) they must be thought of as arising from twofold lattice-plane reflection of the primary beam.\par
+Their intensity will therefore in practice be considerably smaller than that of the directly reflected beams, although according to the theory developed here it should be of about the same intensity as these.\par
+\section*{§ 9. Symmetric Reflection. Coordinate Transformation}
+39 In the experiments of Davisson and Germer the primary beam strikes an octahedral face of the face-centered cubic nickel crystal perpendicularly, i.e. in the direction of a threefold axis.\par
+Moreover, three mirror planes rotated by 60∘ with respect to one another are determined by the same crystal normal as well as by the altitudes of the equilateral triangles formed by the atoms lying in the octahedral face.\par
+As a consequence of these symmetry properties of the crystal with respect to the primary beam, reflected beams in the experiments occur not singly, but in three or six mutually symmetric directions.\par
+Three symmetric reflection directions are relevant for the reflections in the (111) and (100) azimuths.\par
+They arise from one another by rotation through 120∘ about the primary beam as axis.\par
+In this case the beams lie in the aforementioned mirror planes.\par
+In all other azimuths six beams always occur simultaneously, three of which arise from one another by rotation through multiples of 120∘, while one triple is obtained from the other by reflection in one of the mirror planes.\par
+The reflection in the (110) azimuth, observed by Davisson and Germer alone besides those in the (111) and (100) azimuths, is distinguished by the fact that all beams run perpendicular to one mirror plane each; consequently all six symmetric beams become one another by rotations through multiples of 60∘ about the primary beam.\par
+The intuitive fact that several symmetry-related reflections occur when the primary beam lies along a symmetry axis also follows directly from the dynamical theory.\par
+\origpage{101}
+To show this, we use the fact that 8π2 me U (r) = V (r) = ∑ vg e2πi(gr) (7) h2 g is invariant when the position vector r is rotated through the angle 2π/n about an n-fold rotation axis.\par
+For then the two coefficients vg and vh must be equal, if g arises from h by a rotation about the corresponding symmetry axis of the reciprocal lattice, likewise through 2π/n or a multiple thereof.\par
+Likewise a symmetry plane involves the equality of two coefficients vg and vh each, when the vector g is carried over into h by reflection in the symmetry plane (in the reciprocal lattice).\par
+On the basis of these symmetry properties of the Fourier coefficients it is easy to show that the dynamical potential quantities for all symmetrically reflected beams are equal.\par
+In the derivation of equations (36) of § 4 we must now assume the n + 1 amplitudes c1, c21, c22 ... c2n of the primary and the n secondary beams to be large, instead of only two as there.\par
+\mathref{427}{101}
+\origpage{102}
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 102).\par
+The secondary waves all have the same amplitude.\par
+With the symmetry-adapted definitions in (78), the many-beam equations (36b) reduce exactly to the earlier two-beam equations (36). The preceding discussion of the dispersion equation and the total reflected intensity therefore carries over, with the intensity divided among the n symmetry-equivalent reflected beams.\par
+\noindent\footnotesize 1) This reduction fails when the Laue conditions are accidentally satisfied simultaneously for two reflected beams. The third-order reflections in the \{111\} and \{100\} azimuths are examples: elementary diffraction theory would make them coincide in wavelength, whereas in electron diffraction the dynamical potential quantities differ and the two reflected beams need not coincide.\par\normalsize
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 102).\par
+\origpage{103}
+the considerations put forward remain the same, and the intensity of all reflected beams together also remains the same as before, while of course each individual beam now carries only 1/n of the total reflected intensity according to (78).\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 103).\par
+We can now calculate the dynamical potential quantities in the special case of the Davisson and Germer experiments, noting that the cubic axes of the nickel crystal1) are directed out of the crystal at equal angles to the (111) surface of the crystal.\par
+The symmetrically reflected beams then arise from one another by permutation of the three reflection indices.\par
+In general this yields 6 symmetrically reflected beams; only when the reflection occurs in the (100) or (111) azimuth do 2 reflection indices become equal and we obtain only 3 reflected beams by permutation (cf. beginning of this section).\par
+The primary wave is directed √ into the crystal perpendicularly, its propagation vector p 0 therefore has the component −k0 / 3 along each axis.\par
+For the case of exact fulfillment of the Laue equations one therefore obtains for the resonance denominators (cf.\par
+\noindent\footnotesize 1) In the first preliminary communication (Naturwissenschaften 15, p. 787, 1927) I used other coordinates.\par\normalsize
+\origpage{104}
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 104).\par
+(6) of the first section.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 104).\par
+\mathref{449}{104}
+\origpage{105}
+\section*{§ 10. Calculation and Discussion of the Work Function}
+We have developed the theory of crystal diffraction of electrons up to this point without being able to state the numerical magnitude of the effects to be expected.\par
+This takes us from the purely wave-kinematical theory of § 1 to a dynamical theory and have seen that the mean potential V0 in the crystal is responsible for the crystal possessing a refractive index for de Broglie waves V0 μ = √1 + E whereas the detailed spatial variation of the potential causes all the finer phenomena.\par
+We now want to make up for what was missed, and on the basis of a wave-mechanical picture of the fields of the crystal atoms arrive first at an estimate of the mean potential V0, later also at a determination of the higher Fourier coefficients Vh of the potential.\par
+The mean potential V0 is the absolute term of the Fourier expansion of the electrostatic potential V in the crystal1) and is calculated as the volume integral of the potential V (r) at each point of the elementary cell of the crystal, divided by the volume of the elementary cell: 1 V0 = ∫ V (r) dτ. / (83) (a1 [a2 a3 ]) El.-Z.\par
+To the potential at the field point r contribute — at least for the neutral atoms with which we have to deal — the greatest part [from] the elementary cell in which the field point r lies.\par
+Nevertheless, for generality’s sake, we also want to take into account the contributions of the remaining elementary cells to the potential of the one we consider.\par
+Now all elementary cells are built alike.\par
+If we denote the elementary cell we consider by 0, and all other cells by the displacement P by which they arise from cell 0, then the charge distribution of cell 0 produces exactly the same potential in cell P as cell −P does in cell 0.\par
+We can therefore replace the integral of the potential exerted by all crystal atoms over one elementary cell by an integral, over all space, of the potential produced by the atoms of a single elementary cell.\par
+\noindent\footnotesize 1) The Fourier expansion of V differs from our expansion ( / 7) by the factor h2 /8π2 me.\par\normalsize
+\origpage{106}
+I.e., we take into account the influence of all crystal atoms by using only the atoms of one elementary cell for the calculation of the potential V (r), and integrating V (r) over infinite space instead.\par
+If the crystal consists of neutral atoms, this integral can again be conceived as the sum of the integrals over the potentials arising from the individual atoms1): ∞ V0 = ∑∫ Vi (r) dτ. i 0 Here Vi (r) denotes the potential exerted by the ith atom of the basis on a field point whose position vector, referred to the nucleus of this very atom, is r.\par
+44 We have already demanded in § 1, from the consideration that the metal crystal must not become depleted of electrons, V0 > 0.\par
+We now see the theoretical reason for this: For the field at a point r lying inside the charge cloud of a neutral atom2), all those electrons drop out which are outside a sphere about the nucleus of radius r = |r|.\par
+The atomic residue determining the field is then always positively charged, because the atomic nucleus is not completely neutralized by the part of the electron cloud inside the sphere r.\par
+An atom that is electrically neutral outward behaves, with respect to the electric field at a field point in its interior, like a point charge concentrated in the nucleus, whose magnitude decreases with increasing distance of the field point from the nucleus, but always remains positive.\par
+The electrostatic potential in the interior of a neutral atom, and likewise the mean potential V0 in a crystal composed of neutral atoms, is therefore always positive, in agreement with our earlier consideration.\par
+\noindent\footnotesize 1) For ions the space integrals over the potentials of the individual ions no longer converge, but only the integral over the potential arising from the whole — neutral — elementary cell.\par\normalsize
+\noindent\footnotesize 2) The following considerations refer, strictly speaking, only to spherically symmetric atoms (cf. the simplifying assumptions further below); if one goes far enough into the interior, they of course hold generally, so that the conclusion for V0 probably holds for every crystal of neutral atoms.\par\normalsize
+\origpage{107}
+In order to actually calculate the mean potential V0 in a crystal, we must now make rather farreaching idealizations: 1.\par
+We assume the individual atoms of the crystal to be spherically symmetric, as we have already done in our qualitative considerations above.\par
+For the closed shells of free1) atoms this assumption holds exactly according to Unsöld2), and it will still conform to the actual conditions very extensively for the inner, tightly bound electrons even under the influence of the (not spherically symmetric) fields of the remaining crystal atoms.\par
+The outer electrons will certainly be deformed more strongly by these fields, but because of the rapid falloff of the fields of neutral atoms one will be able to justify the assumption of spherically symmetric distribution even here, especially for very symmetric crystals.\par
+We assume hydrogen eigenfunctions for the electrons.\par
+We take into account the core electrons inside a given closed electron shell by screening numbers, which we take from the work of L.\par
+Pauling3) “Electron distribution in many electron atoms”.\par
+The use of a continuous distribution of the electrons over the atom avoids the defects of the method of concentrating the charge of each closed shell on a spherical shell of suitably chosen radius (entirely obscure values of the Fourier coefficients, which are extraordinarily sensitive to the choice of the radii of the spherical shells).\par
+However, precisely the hydrogen-eigenfunction distribution certainly does not correspond to the true conditions in complicated atoms, because it assumes that the electron moves in the potential field of a point charge, i.e. that the “effective nuclear charge” is a constant throughout the region over which the charge of the electron is distributed.\par
+In reality, however, the “effective nuclear charge” decreases strongly and continuously from the nucleus outward.\par
+We can therefore expect only an approximate estimate of the mean potential V0 from this atomic model. 1)\par
+\noindent\footnotesize 1) What matters is that the field to which the electrons are subject is a central field.\par\normalsize
+\noindent\footnotesize 2) A. Unsöld, Ann. d. Phys. 82, p. 355, 1927.\par\normalsize
+\noindent\footnotesize 3) L. Pauling, Proc. Roy. Soc. 114, p. 181, 1927.\par\normalsize
+\origpage{108}
+For lack of more precise knowledge of the distribution of the conduction electrons not bound to the individual atoms, we assume them to be distributed uniformly over the whole crystal.\par
+We ascribe to each atom as many conduction electrons as neutralize the nuclear charge together with the bound electrons.\par
+In doing so we further replace the parallelepiped which we can delimit as the “domain of a single atom” by the sphere of equal volume, and treat the conduction electrons to be counted to the atom as distributed uniformly over this sphere.\par
+We first use assumption 1 (spherically symmetric distribution of the electrons about the nucleus) without going into the details of this distribution for the time being.\par
+If ρ(r)r2dr is the number of electrons in a spherical shell of radius r and Z is the nuclear charge, the electrostatic potential at distance R is given by equation (84). Neutrality fixes the total number of electrons to Z.\par
+For a crystal of identical atoms, with ν atoms per elementary cell, equation (83b) expresses the mean potential in terms of this spherically symmetric atomic potential. The accompanying Hartree footnote is retained in the companion audited translation (rev20).\par
+\origpage{109}
+\mathref{493}{109}
+Substituting (84) into (83b) and interchanging the order of integration gives equation (85), in which V0 is proportional to the fourth radial moment of the electron distribution.\par
+(85) 3 0 Since ρ(r)r2 dr is the number of electrons at distance r from the nucleus, the mean potential V0 represents something similar to the moment of inertia of the electrons of the atom.\par
+We now insert the actual electron density ρ(r)/4π in the atom.\par
+It is equal to the sum of the densities which the individual electrons have at distance r from the nucleus.\par
+The integral (85) can thus be calculated as a sum of similarly constructed integrals over the densities of the individual electrons.\par
+For an electron with principal quantum number n and azimuthal quantum number l, the 4π-fold density is, however, now simply given by the square of the r-dependent part of the Schrödinger hydrogen eigenfunction: 2 ρnl (r) = Xnl = Cnl e−ξ ξ 2l [L2l+1 2 n+l (ξ)].\par
+Here 2rp ξ= na0 and h2 a0 = 4π2 me2 is the radius of the “innermost orbit” of the Bohr hydrogen model.\par
+\origpage{110}
+To evaluate the contribution of an electron with quantum numbers n,l to V0, Bethe follows Waller and represents the associated Laguerre polynomials by a generating function; the exact formula is given in (86a) in the companion audited translation (rev20).\par
+\noindent\footnotesize 1) I. Waller, Ztschr. f. Phys. 38, p. 635 (especially p. 644).\par\normalsize
+\origpage{111}
+\mathref{506}{111}
+Keeping only terms with equal powers of the two auxiliary variables gives the coefficient P\_nl. Evaluation of the binomial coefficients then yields the contribution of an n,l electron to the mean potential, equation (87).\par
+The conduction electrons are assumed to be uniformly distributed inside a sphere whose volume equals the volume per atom in the crystal.\par
+Their charge density and the resulting contribution to the mean potential follow from this uniform-sphere model; the exact expressions are reproduced in the companion audited translation (rev20).\par
+To obtain V0, the contributions of all bound and free electrons are summed. Bethe then applies the calculation to nickel.\par
+Free Ni atoms contain, according to the evidence of the optical and X-ray spectra, besides the closed K, L, MI and MII shells, 8 MIII electrons and two NI electrons.\par
+\origpage{112}
+The orbit of the two outer N-shell electrons is so large that it would not fit inside the lattice cell.\par
+We therefore assume that these two N electrons are split off from the atomic association and are freely mobile in the crystal as conduction electrons.\par
+For nickel the atomic number density used in the calculation is N=0.92×10\textasciicircum{}23 cm−3; the numerical conversion factors are retained in the companion audited translation (rev20).\par
+With these constants, the contributions to V0 can be expressed directly in volts. The radius R0 of the equivalent sphere used for the conduction electrons is also determined there.\par
+Using these constants together with Pauling’s screening numbers, Bethe evaluates the mean potential for nickel as summarized in the table in the companion audited translation (rev20).\par
+\noindent\footnotesize 1) L. Pauling, loc. cit., p. 50.\par\normalsize
+\noindent\footnotesize 2) Hartree, l. c.\par\normalsize
+\origpage{113}
+yield too large extensions of the electron shells.\par
+Also the conduction electrons will presumably not, as we assumed, be distributed uniformly over the whole crystal, but be more strongly concentrated in the neighborhood of the crystal atoms.\par
+But since our mean potential V0 is proportional to the mean value of the square of the distance r2, averaged over the whole electron cloud of the atom, we have certainly obtained too large a value for V0.\par
+On the other hand, we have admittedly neglected the fact that the Davisson–Germer electron penetrating the crystal from outside polarizes the crystal atoms and thereby somewhat increases the potential V (r) at each point of the crystal.\par
+This, however, should hardly outweigh the first point.\par
+It is therefore probable that the exactly calculated theoretical value of the mean potential lies near the experimental mean value of 14.8 volts.1) It has already been pointed out earlier by Rosenfeld and Witmer2) and independently by me3) that the mean electrostatic potential V0 in the crystal must agree with the work function Wa of the Richardson effect in Sommerfeld’s notation.4) Perhaps only one more explanation is needed as to why in the electron diffraction experiments Wa itself enters and not, as in the Richardson effect, the difference between Wa and the energy Wi of the conduction electrons moving with the limiting velocity of Fermi statistics: In the experiments of Davisson and Germer, Thomson, Rupp the energy E of the incident electrons has nothing at all to do with the energy of the conduction electrons. E is simply increased by the potential difference V0 = Wa upon entering the crystal.\par
+In the Richardson effect, on the other hand, Wi represents, so to speak, the kinetic energy of the conduction electrons in the crystal, and the relevant quantity is the difference between this energy and the potential threshold to be overcome upon exit, i.e. Wa − Wi.\par
+\noindent\footnotesize 1) L. Rosenfeld and E. Witmer (Ztschr. f. Phys. 49, p. 736, 1928) also used newer experiments by Davisson and Germer, as well as the experiments by Rupp, and find the value 18 volts for V0.\par\normalsize
+\noindent\footnotesize 2) L. Rosenfeld and E. Witmer, l. c.\par\normalsize
+\noindent\footnotesize 3) H. Bethe II, l. c.\par\normalsize
+\noindent\footnotesize 4) A. Sommerfeld, Ztschr. f. Phys. 47, p. 1 (especially p. 27ff.). [Printer’s signature at foot of page: Annalen der Physik. IV. Folge. 87. — 8]\par\normalsize
+\origpage{114}
+Using the work function Wa to be taken from electron diffraction experiments and the constant of the Richardson effect Wa − Wi, which always lies around 4 volts, the energy Wi of the conduction electrons can be calculated, which is closely related to the number z of conduction electrons split off per atom: 2/3 h2 3N p Wi = ( ) = 7.4 ⋅ Z 2/3 volts (for Ni).\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 114).\par
+The complete breakdown of all unclosed shells in the crystal association, put forward by Houston3) as possible to explain the conductivity of metals, would mean for Ni the splitting off of ten (8 MIII and 2 NI) electrons.\par
+From this, however, the extraordinarily high amount of 34 volts would result for Wi, which cannot be reconciled with the experimental results of Davisson and Germer.\par
+The value of Wa calculated in this section from the atomic fields of course also depends on the assumed number of conduction electrons per atom.\par
+For nickel, for example, it would increase by the difference of the contributions of a conduction electron (3.11 volts) and one of the most weakly bound (MIII) electrons (0.83 volts) to V0 for each further split-off electron, i.e. each time by 2.28 volts.\par
+The kinetic energy of the [electrons] moving with the “limiting velocity”\par
+\noindent\footnotesize 1) Cf. the Table IV given in the work of Rosenfeld and Witmer, l. c. Remarkable is the large number of conduction electrons for Ag (3), but also that Cu and Au split off not merely one conduction electron per atom.\par\normalsize
+\noindent\footnotesize 2) Rosenfeld and Witmer obtain with Wa = 18 volts two or three conduction electrons per Ni atom (cf. footnote 1 of the previous page).\par\normalsize
+\noindent\footnotesize 3) W. Houston, Ztschr. f. Phys. 48, p. 449, 1928.\par\normalsize
+\origpage{115}
+...Wi of the moving conduction electrons increases considerably more rapidly with the number of conduction electrons, at least as long as the latter is not too large.\par
+In principle, one could therefore determine, by a correspondingly improved calculation of the work function Wa, in a purely theoretical manner, that number of conduction electrons per atom for which precisely the difference Wa − Wi is of the same order as Richardson’s constant.\par
+For now, however, the accuracy of our calculation of Wa does not suffice For this purpose.\par
+But it is already a fine result that the number of conduction electrons per atom can be determined by a combination of electron-diffraction and Richardson experiments.\par
+As far as can be judged from the material furnished by Rupp\textasciicircum{}\{1)\} and evaluated by Rosenfeld and Witmer\textasciicircum{}\{2)\}, this number, like the work function Wa itself, is nearly constant (equal to 2–3) for different metals.\par
+One would actually expect the electrons outside the closed shells to separate off, with a corresponding relation to the chemical valence. \textit{[Editorial note: the 1928 print uses the conjunction “and”; this wording preserves the coordination without silently changing the source.]}\par
+But the material still appears too scanty to draw conclusive inferences from it.\par
+\section*{§ 11. Calculation of the Fourier coefficients of the potential}
+We now proceed to calculate the Fourier coefficients determining the potential profile on the basis of the same assumptions about the structure of the atoms that we used in the preceding section for the calculation of the mean potential.\par
+The detailed displayed derivation associated with this passage is preserved exactly in the companion audited translation (rev20) (original journal p. 115).\par
+Here g denotes the absolute value of the [vector g, which stands as the index of the Fourier coefficients ...]\par
+\noindent\footnotesize 1) E. Rupp, loc. cit.\par\normalsize
+\noindent\footnotesize 2) Rosenfeld and Witmer, loc. cit.\par\normalsize
+\noindent\footnotesize 3) This expansion differs from the expansion (7) generally used in this paper by the factor 8πħ2/me.\par\normalsize
+\origpage{116}
+Here g denotes the absolute value of the vector g, which stands as the index of the Fourier coefficients; i.e., in orthogonal coordinates g2 = |g|2 = .... The Fourier coefficients of the electron density are now, as is well known, computed from [Eq. (89)] where ρ(r) denotes the 4π-fold electron density at the field point r and the integration is to be extended over one unit cell.\par
+To take into account the fact that the charge clouds of the atoms extend — albeit by quite small amounts — into foreign unit cells, we again extend the region of integration to infinity and consider instead only the electron density originating from the atoms of one unit cell.\par
+We split the integral into a sum of integrals of identical structure over the electron densities of the individual atoms of the unit cell, which are located at the field point r, ρi(r), and denote the position of the ith basis atom by Ri, the position vector of the field point, referred to the nucleus of this atom, simply by r.\par
+\mathref{562}{116}
+The corresponding coefficient of the nuclear density is, since the nuclei have no extension, with the notation Zi for the nuclear charge of the ith atom, simply [Eq. (90a)]. In a crystal consisting entirely of identical atoms, the integrals in (90) all become equal.\par
+The sums in (90) and (90a) then simply coincide with the structure factor of X-ray interference theory. 1) We include the factor 4π in the electron density in order to remain in agreement with the preceding section, and in order to be able afterwards to set ρ simply equal to the square of the eigenfunction.\par
+\noindent\footnotesize 2) Cf. the treatment in the preceding section of the potential exerted on the atoms under consideration by foreign unit cells.\par\normalsize
+\origpage{117}
+...agree with the interference theory. For a face-centred lattice, all Fourier coefficients ρg with “mixed indices” thus vanish, whereas for unmixed indices ρg\textasciicircum{}K = NZ, N being again the number of atoms per unit volume.\par
+If we now again assume the electrons to be distributed with spherical symmetry, we obtain [integral (90)] where θ denotes the angle between the fixed direction of the vector g and the position vector r, which in (90) was the variable of integration.\par
+\mathref{568}{117}
+\noindent\footnotesize 1) We have already made use in § 8 of the fact that v\_h vanishes simultaneously with the structure factor for the reflection (h1, h2, h3). 2) I. Waller, Ztschr. f. Phys. 38, p. 644, 1926.\par\normalsize
+\noindent\footnotesize 3) The other differs from this one only in the sign of i.\par\normalsize
+\origpage{118}
+wherein α = ... (92a) — differs, namely, from the integral evaluated by Waller, ... with s = −1 only in the factor in the exponent of e.\par
+Accordingly, the derivation of the preceding section can be transferred to our case, and we obtain, analogously to (86a):\par
+\mathref{573}{118}
+The value of the integral (92) is therefore equal to the coefficient of (ut)\textasciicircum{}(n−l−1) in the expansion of [...]. [EN tail continues with the translation of the next DE sentence — see L576.]\par
+Since furthermore τ − 2σ ≧ 0 must hold, we need only terms with σ ≦ τ/2 ≦ (n−l−1)/2 to be taken into account, and we obtain J\_nl = [...].\par
+\mathref{576}{118}
+\mathref{577}{118}
+\origpage{119}
+\mathref{578}{119}
+\mathref{579}{119}
+\mathref{580}{119}
+\mathref{581}{119}
+\origpage{120}
+If we insert this value for the integral (92) into (91a), we obtain for the desired Fourier coefficient of the electron density [Eq. (93)] or [...]. The expressions (92) read, for the first three principal quantum numbers: [...]. [EN tail adds the next DE sentence — see L583.]\par
+\origpage{118}
+Written out in the individual indices, the relation (92a) reads: [Eqs. (92c), (92d)] and goes over, for cubic axes, into the particularly simple expression [...].\par
+\origpage{120}
+...over, which for the lattice constant a = 3.52 Å of nickel takes the value [...] (92e). From formula (93) the basic properties of the Fourier expansion of the density of an (n, l) electron can be read off. The Fourier coefficients depend, first of all, as a consequence of the assumed spherically symmetric distribution of the electrons, only on the absolute value of the vector g in the reciprocal lattice, but not on the individual indices g1, g2, g3.\par
+\origpage{121}
+Furthermore, for small indices g (small α) the first sum in (93) approaches the value 2n, the second unity, and thus the Fourier coefficient [approaches] the number N of atoms per unit volume.\par
+This is quite natural: the exponential function e\textasciicircum{}(2πi(gr)) becomes nearly unity over the whole region of the atom, and the integral [...], which, apart from the factor N, determines the Fourier coefficient, simply reduces to the space integral over the density of the (nl) electron, ∫ρ(r)r2dr, which is normalized to unity.\par
+Thus the Fourier coefficient for small indices must become equal to the number N of atoms per unit volume.\par
+For large indices g, on the other hand, the first sum [...] becomes [...], the second takes the value [...] (since the terms with smaller powers of α2 may be neglected), and the entire Fourier coefficient becomes approximately: [...]\par
+\noindent\footnotesize 1) The following considerations, just like formula (93), would also hold — exactly, in fact — for the coefficients of the Fourier integral by which the charge distribution of free hydrogenlike atoms can be represented. They certainly remain qualitatively valid also for atoms for which hydrogen eigenfunctions may no longer be used.\par\normalsize
+\origpage{122}
+and goes to zero as α\textasciicircum{}(−2(l+2)).\par
+This too is easily understood: the oscillations of the exponential function e\textasciicircum{}(2πi(gr)) become so rapid that the contributions of the individual regions of space to the integral (90c) mutually cancel.\par
+We expect that this cancellation is more complete for the very smooth density curves of the electrons with large azimuthal quantum number l than for the electrons with small l, whose density exhibits many maxima and minima in the radial direction, and that consequently the Fourier coefficients for the former fall off more rapidly with increasing index (α\textasciicircum{}(−2(l+2))).\par
+The conduction electrons, as a consequence of their assumed uniform distribution over the entire crystal, naturally contribute nothing to the Fourier coefficients of the electron density (except to ρ000).\par
+The Fourier coefficient of the nuclear density, which we found to be NZ for crystals of identical atoms, remains constant for all indices g for which it differs from zero at all. | When the index g is small, it is cancelled to a large extent by the Fourier coefficient ρg\textasciicircum{}El of the electron density; for large indices g, on the other hand, the Fourier coefficient of the electron density is negligible by comparison, according to what was just said.\par
+Accordingly, by (77a), the Fourier coefficient Vg of the potential behaves for large indices g as 1/g2.\par
+\noindent\textbf{Table 3 contains, for nickel, the contributions of the individual electron shells to the Fourier coefficients of the electron density, as long as G2 = g12+g22+g32 < 30, furthermore the coefficient ρg = ρg\textasciicircum{}K − ρg\textasciicircum{}El itself up to G2 = 120, both omitting the factor N.}\par
+The second-to-last column gives the Fourier coefficient Vg of the potential in volts, the last the coefficient generally used in this paper, vg = ... expressed in the unit Ångström−2.\par
+\noindent\footnotesize 1) I.e., for which the structure factor does not vanish.\par\normalsize
+\noindent\footnotesize 2) For the index triple 0, 0, 0, ρ000\textasciicircum{}K − ρ000\textasciicircum{}El = 0, which simply means that the crystal as a whole is neutral.\par\normalsize
+\origpage{123}
+(none)\par
+\mathref{601}{123}
+\section*{§ 12. Numerical calculations of the quantities of electron diffraction theory}
+We now want to use the Fourier coefficients obtained in the previous section in order to actually carry out numerically, for one of the “Laue spots” observed by Davisson and Germer, the calculations of §§ 4—7 and 9.\par
+\origpage{124}
+We choose For this purpose the reciprocal-lattice point (622), which was observed in the (111) azimuth at 160 volts electron energy (in vacuum). For this reciprocal-lattice point, the exact Laue equation gives the following wave number in the crystal: [κ0 = 6.80 Å−1]. To calculate the dynamical potential quantities σ11, σ12, σ22, τ11, τ12, τ22 of § 7, we order [the sums in (82) according to G2 ...].\par
+The evaluation must be carried out separately for each summation term, until G becomes so large that no small resonance denominators occur any more.\par
+For larger G one may replace the summation by an integration, whereby one may write for vg approximately F/G2 with a suitably chosen constant F.\par
+For the (622) reflection from nickel, we obtain for the dynamical potential quantities (82) the values: [σ11 = 22.56 Å−1, ...]. With these, the quantities defined in § 7 become furthermore [...].\par
+\noindent\footnotesize 1) The calculation for the most accurately investigated reflection (331) at 54 volts unfortunately is difficult because in the vicinity (at 65 volts) the especially strong reflection (111) occurs, and the beam in question cannot be regarded as “weak”. The treatment of three strong beams, however, presents great computational difficulties.\par\normalsize
+\origpage{125}
+With this we now have everything we need for the calculation of the quantities of the dynamical theory that interest us:\par
+For the midpoint (W = 0) of the region of selective reflection we obtain from equation (72) [...] the value κm − κ0 = −0.053 Å−1, κm = 6.75 Å−1.\par
+The corresponding vacuum wave number is Km = √(6.752 − 4.14) = 6.43 Å−1.\par
+Thus the selectively reflectable wave number is shifted by 0.32 through the refractive index, and by 0.05 Ångström−1 through the influence of the potential variation according to the dynamical theory.\par
+The influence of the second and third approximation on the magnitude of the selectively reflectable wavelength is thus about one sixth of that of the first approximation.\par
+Had one simply sought, according to the second approximation, that wave number κμ for which the dynamical potential quantities V11, V12, V22 yield precisely κμ as the midpoint of the selective-reflection region, one would have found for κμ − κ0 the somewhat larger value −0.066 Ångström−1.\par
+The boundaries of the region of selective reflection are given by the roots of the equation W2 = 1 (cf. § 7):\par
+[Equation.] From this we obtain κ1 − κ0 = −0.039, κ2 − κ0 = −0.103.\par
+The region of selective reflection has a width of 0.064 Ångström−1, which is about 1 percent of the wave number.\par
+The resolving power of the crystal for electron diffraction is [Eq. (94): λ/Δλ = κ0/(κ1−κ2) ≈ 100]. If one further takes into account here that our calculation neglects the inelastic collisions, which in any case reduce the resolving power, and that the incident-beam direction is by no means perfectly defined, then this resolving power agrees well with the width of the reflection maxima measured by Davisson and Germer of 7 to 25 percent of the wave number, corresponding to velocities [...].\par
+\origpage{126}
+...of 300 to 50 volts.\par
+The half-width would presumably amount to about half of that, i.e., for 160 volts one may reckon with about 5 percent half-width (λ/Δλ = 20).\par
+Zwicky had, from the first approximation by the Born method, inferred for the resolving power the obviously far too high value λ/Δλ = 108.\par
+From our second approximation λ/Δλ = 60 would follow.\par
+The intensity of the reflected beam is given in Tab. 5 [...]\par
+\mathref{624}{126}
+Curve 8 illustrates the situation, but it must be borne in mind that the intensity calculated from the third approximation is only conditionally correct.\par
+The reflecting power of a single layer moves, in the region of selective reflection, between 0.003 and 0.03.\par
+Equivalent to this is the observation that the electrons [...]\par
+\noindent\footnotesize 1) F. Zwicky, Proc. Nat. Acad. Sci. 13, pp. 518—525. 1927.\par\normalsize
+\noindent\footnotesize 2) M. Born, Ztschr. f. Phys. 38. p. 803. 1926.\par\normalsize
+\origpage{127}
+...penetrate into the crystal up to the 17th to 70th atomic layer.\par
+As the limit of penetration the place was assumed at which the electron current has sunk to 10 percent of its original value.\par
+This limitation of the penetration depth of the electrons is due solely to the exponential intensity decrease in the crystal because of the selective reflection.\par
+Under ordinary conditions, however, the penetration depth of the electrons depends on absorption Fig. 8 using inelastic collisions, which we have neglected.\par
+8 [The figure plots the reflected intensity against κ − κ0 in Ångström−1 ...]\par
+From the success of Rupp’s experiments one may conclude that this absorption is of a somewhat smaller order of magnitude than the intensity decrease caused by selective reflection.\par
+If, on the other hand, one evaluates the experimental intensity curve found by Davisson and Germer for the (331) reflection (at 54 volts), we find, on the assumption that the electrons are simply absorbed in proportion to the path traversed in the crystal, that 54-volt electrons penetrate into the crystal approximately up to the 6th layer.\par
+But here absorption through inelastic collisions, intensity decrease through selective reflection, and disturbance through inhomogeneous direction of incidence are intertwined, and moreover the penetration depth certainly decreases very strongly with electron energy.\par
+\origpage{128}
+Two effects are still missing from the theory and would be required for exact intensity calculations: thermal motion of the atoms, which appears experimentally to act in a manner analogous to the Debye factor in X-ray diffraction, and inelastic electron collisions.\par
+The study of these two phenomena would be required in particular also for a theory of the continuous background in the experiments of Davisson and Germer.\par
+Apart from this, theory and experiment agree quite well wherever the effects are observable: the refractive index has the theoretically required variation with wavelength, and the mean potential inferred from the refractive index agrees well with the theoretically calculated one.\par
+The resolving power also comes out of the observed order of magnitude.\par
+The reflecting power does have a plausible value, but is not yet exactly comparable with experiment.\par
+The shift of the wavelengths capable of selective reflection due to the participation of the potential variation in the determination of their magnitude is — apart from experimental errors — responsible for the fluctuations of the value of V0 calculated from the experiments about its mean value.\par
+For an exact numerical comparison, an improved calculation of the atomic fields must be undertaken.\par
+Nothing conclusive can be said from the experiments about the higher Fourier coefficients of the potential, whereas one of the most important results of the theory is the determination of the work function Wa of the Richardson effect.\par
+I would like to express my deepest thanks to Prof. Sommerfeld for suggesting this work and for his continued interest and encouragement during its progress.\par
+Summary. The diffraction of electrons by crystals observed by Davisson and Germer, Rupp, Thomson, and others is treated within wave mechanics.\par
+\noindent\footnotesize 1) W. Houston, Ztschr. f. Phys. 48. p. 449. 1928.\par\normalsize
+\origpage{129}
+electrons by crystals observed by Davisson and Germer, Rupp, Thomson, etc., is treated.\par
+In the first approximation, the observed discrepancy between X-ray and electron diffraction can be explained by a refractive index.\par
+From the observed refractive indices one may infer, for nickel, an accelerating potential V0 = 14.8 volts which the crystal exerts on electrons (§ 1).\par
+The dynamics of the field of the de Broglie waves in the crystal (§ 2) and the conditions at its surface (§ 3) are developed.\par
+With the simplifying assumption that, besides the primary beam, only one strong diffracted beam occurs (§ 4), the dispersion equation can be set up.\par
+From it, in far-reaching analogy to Ewald’s dynamical theory of X-ray reflections, the more precise position of the reflection maxima and the “resolving power” of the crystal (§ 5) as well as the reflected intensity (§ 6) can be determined.\par
+The approximation is then carried one step further (§ 7).\par
+On the basis of the developed dynamical theory of electron diffraction, the characteristic deviations from X-ray reflection are discussed (§ 8).\par
+In connection with the very small penetrating power compared with X-rays of the same wavelength, electron diffraction deviates from X-ray diffraction in a characteristic way.\par
+The extinction laws of X-ray reflections, too, can be violated under certain circumstances. § 9 treats the case, realized by Davisson and Germer, of reflection in several directions symmetric with respect to the incident beam.\par
+The mean accelerating potential of the crystal on the electrons, responsible for the refractive index, is found on purely theoretical grounds, on the basis of wave-mechanical assumptions about the structure of the crystal atoms, to be close to the value inferred from the experiments (§ 10).\par
+The relation to the work function in the Richardson effect is explained.\par
+Then the Fourier coefficients of the potential variation (§ 11) are calculated, and finally with their help, in an example, the numerical values of the reflecting and resolving power, etc., are computed (§ 12).\par
+The resulting theoretical values agree satisfactorily with experiment.\par
+(Received July 9, 1928) [running footer from text extraction]\par
+\end{document}
