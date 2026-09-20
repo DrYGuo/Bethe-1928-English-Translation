@@ -2,6 +2,22 @@
 
 All notable revisions to the working translation are documented here.
 
+## [Polished Reading Edition] — 2026-09-20
+
+### New edition replaces rev20
+- `Bethe1928_translation_FINAL_rev20.pdf` (91 pp) removed; replaced by `Bethe_1928_Polished_English_Reading_Edition.pdf` (26 pp)
+- All 665 sentence-aligned audit units re-reviewed with a second criterion: the English must read as coherent scientific prose. Germanic calques, page-break artifacts, duplicated wording, and logically opaque constructions were revised, with the German facsimile and the existing fidelity audit used as controls against changes of meaning
+- Nine fidelity issues identified by the previous audit incorporated, including the (46a)/(43) cross-reference and the p. 63 page-break/footnote repairs
+
+### Mathematics handled by reference
+- Displayed equations are not reconstructed from extracted text in this edition. Gray "Audited mathematical material" notes mark where exact equations (1)–(94), numerical tables, figures, footnotes, and documented source-print anomalies are preserved in the audited translation (rev20, retained in repository history)
+
+### LaTeX source published
+- `Bethe_1928_Polished_English_Reading_Edition.tex` — standalone LaTeX source of the reading edition now included in the repository
+- `source/` — supporting audit material: prose review report, math notation audit checklist, audit appendix source
+
+All notable revisions to the working translation are documented here.
+
 ## [rev20] — 2026-09-18
 
 ### Pagination and front matter
