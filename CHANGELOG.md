@@ -2,6 +2,15 @@
 
 All notable revisions to the working translation are documented here.
 
+## [rev22] — 2026-09-20
+
+### Prose-only revision of the audited translation
+- `Bethe_1928_Final_Audited_Translation_rev22_English_only_math_preserved.pdf` (91 pp) replaces `Bethe_1928_Final_Audited_Translation_rev20.pdf`
+- English prose corrected on 11 pages (PDF pp. 4, 7, 13, 14, 16, 18, 36, 48, 49, 50, 76); no inline or displayed mathematics, Miller indices, tables, figures, or page geometry re-typeset — the mathematical layer is inherited unchanged from rev20
+- `source/` replaced with the rev22 source package: LaTeX assembly source, human-editable English sentence patch record, changed-pages PDF, and the immutable rev20 base document
+
+All notable revisions to the working translation are documented here.
+
 ## [Polished Reading Edition] — 2026-09-20
 
 ### Two-document release
