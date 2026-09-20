@@ -10,14 +10,14 @@ This repository contains a working scholarly English translation of Bethe's 1928
 
 The repository holds two companion documents:
 
-1. **The complete audited translation** (91 pages) — the mathematical and documentary authority: exact equations (1)–(94), numerical tables, figures, footnotes, and documented source-print anomalies, systematically cross-checked against the original German edition.
+1. **The complete audited translation** (91 pages, rev22) — the mathematical and documentary authority: exact equations (1)–(94), numerical tables, figures, footnotes, and documented source-print anomalies, systematically cross-checked against the original German edition. rev22 corrects English prose on 11 pages; the mathematical layer is inherited unchanged from rev20.
 2. **The polished English reading edition** (26 pages) — all 665 sentence-aligned audit units re-reviewed with a second criterion: the English must read as coherent scientific prose. Displayed mathematics is not reconstructed from extracted text here; gray "Audited mathematical material" notes mark where exact equations, tables, and figures are preserved in the audited translation.
 
 The work has **not yet undergone formal peer review** and may be revised as further errors or ambiguities are identified. See [CHANGELOG.md](CHANGELOG.md) for revision history.
 
 ## Contents
 
-- `Bethe_1928_Final_Audited_Translation_rev20.pdf` — The complete audited translation (91 pages)
+- `Bethe_1928_Final_Audited_Translation_rev22_English_only_math_preserved.pdf` — The complete audited translation (91 pages)
   - Translation: translator's note, Bethe's original contents, §§1–12 and Summary (pp. 1–74)
   - Appendix: Seven source-print anomalies rechecked at high resolution (pp. 75–76)
   - German original figures (pp. 77–84)
@@ -27,10 +27,7 @@ The work has **not yet undergone formal peer review** and may be revised as furt
   - Title page and editorial principles
   - Polished English reading text: §§1–12 and Summary, keyed to original journal pages 55–129
 - `Bethe_1928_Polished_English_Reading_Edition.tex` — Standalone LaTeX source of the reading edition
-- `source/` — Supporting audit material
-  - `Bethe_1928_English_Prose_Review_Report.md` — sentence-by-sentence prose review report
-  - `Bethe1928_math_notation_audit_checklist.md` — mathematical notation audit checklist
-  - `Bethe1928_Audit_Revision_4_Appendix.tex` — audit appendix source
+- `source/` — rev22 source package: LaTeX assembly source, human-editable sentence patch record, changed-pages PDF, and the immutable rev20 base document
 
 ## How to cite (working version)
 
