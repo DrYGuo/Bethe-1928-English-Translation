@@ -8,15 +8,22 @@ This repository contains a working scholarly English translation of Bethe's 1928
 
 **This is a working translation, not a final published version.**
 
-The present release is a **polished English reading edition** (26 pages), based on the September 2026 audited translation. All 665 sentence-aligned audit units were re-reviewed with a second criterion — the English must read as coherent scientific prose — while the German facsimile and the existing fidelity audit were used as controls against changes of meaning.
+The repository holds two companion documents:
 
-Displayed mathematics is not reconstructed from extracted text in this edition: gray "Audited mathematical material" notes mark the places where exact equations (1)–(94), numerical tables, figures, footnotes, and documented source-print anomalies are preserved in the audited translation rather than re-created.
+1. **The complete audited translation** (91 pages) — the mathematical and documentary authority: exact equations (1)–(94), numerical tables, figures, footnotes, and documented source-print anomalies, systematically cross-checked against the original German edition.
+2. **The polished English reading edition** (26 pages) — all 665 sentence-aligned audit units re-reviewed with a second criterion: the English must read as coherent scientific prose. Displayed mathematics is not reconstructed from extracted text here; gray "Audited mathematical material" notes mark where exact equations, tables, and figures are preserved in the audited translation.
 
 The work has **not yet undergone formal peer review** and may be revised as further errors or ambiguities are identified. See [CHANGELOG.md](CHANGELOG.md) for revision history.
 
 ## Contents
 
-- `Bethe_1928_Polished_English_Reading_Edition.pdf` — The polished reading edition (26 pages)
+- `Bethe_1928_Final_Audited_Translation_rev20.pdf` — The complete audited translation (91 pages)
+  - Translation: translator's note, Bethe's original contents, §§1–12 and Summary (pp. 1–74)
+  - Appendix: Seven source-print anomalies rechecked at high resolution (pp. 75–76)
+  - German original figures (pp. 77–84)
+  - German original tables (pp. 85–88)
+  - Appendix: Historical Terminology and Modern Equivalents (p. 89)
+- `Bethe_1928_Polished_English_Reading_Edition.pdf` — The polished English reading edition (26 pages)
   - Title page and editorial principles
   - Polished English reading text: §§1–12 and Summary, keyed to original journal pages 55–129
 - `Bethe_1928_Polished_English_Reading_Edition.tex` — Standalone LaTeX source of the reading edition
@@ -27,7 +34,7 @@ The work has **not yet undergone formal peer review** and may be revised as furt
 
 ## How to cite (working version)
 
-> Yueming Guo, trans. "Theory of the Diffraction of Electrons by Crystals" by H. Bethe (_Ann. Phys._ 392, 55–129 (1928)). Working English translation, polished reading edition, September 2026. https://github.com/DrYGuo/Bethe-1928-English-Translation
+> Yueming Guo, trans. "Theory of the Diffraction of Electrons by Crystals" by H. Bethe (_Ann. Phys._ 392, 55–129 (1928)). Working English translation, September 2026. https://github.com/DrYGuo/Bethe-1928-English-Translation
 
 ## Rights
 
